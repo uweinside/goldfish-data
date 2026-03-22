@@ -1,0 +1,150 @@
+{
+  "title": "DevOps Pipeline Automation with AI",
+  "segments": [
+    {
+      "title": "Welcome & DevOps Context",
+      "duration": 480,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Frame AI as an accelerator for pipeline work",
+            "Align on CI/CD maturity levels in the room"
+          ]
+        },
+        {
+          "label": "Chat Prompts",
+          "items": [
+            "What CI/CD platform does your team use today?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pipeline-as-Code Foundations",
+      "duration": 1320,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Write clearer pipeline definitions with AI assistance"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "YAML pipeline structure and readability",
+            "Reusable templates and parameterization",
+            "Security scanning stages in pipelines"
+          ]
+        },
+        {
+          "label": "Reaction Prompts",
+          "items": [
+            "How confident are you writing pipelines from scratch?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pipeline Generation Demo",
+      "duration": 2100,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Demos",
+          "items": [
+            "Generate a multi-stage build-test-deploy pipeline",
+            "Add conditional gates and approval steps",
+            "Create environment-specific variable templates"
+          ]
+        },
+        {
+          "label": "Rules",
+          "items": [
+            "Review all generated pipeline steps before committing",
+            "Never store secrets in pipeline definitions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Break",
+      "duration": 600,
+      "type": "break",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Announce return time",
+            "Restart promptly"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Infrastructure-as-Code Patterns",
+      "duration": 1800,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Generate and validate infrastructure definitions faster"
+          ]
+        },
+        {
+          "label": "Demos",
+          "items": [
+            "Scaffold Terraform modules from requirements",
+            "Generate drift detection scripts",
+            "Produce cost estimation prompts for proposed changes"
+          ]
+        },
+        {
+          "label": "Chat Prompts",
+          "items": [
+            "What infrastructure change burned your team last?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Observability Automation",
+      "duration": 1320,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Automate dashboard and alert configuration"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Standard metrics every service should expose",
+            "Alert fatigue and noise reduction",
+            "Runbook generation for on-call teams"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wrap Up & Commitments",
+      "duration": 780,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Next Steps",
+          "items": [
+            "Refactor one pipeline using AI-generated templates",
+            "Add a security scanning stage to your main branch pipeline"
+          ]
+        }
+      ]
+    }
+  ]
+}

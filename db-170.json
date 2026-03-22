@@ -1,0 +1,131 @@
+{
+  "title": "Database Management with AI Assistance",
+  "segments": [
+    {
+      "title": "Welcome & Data Layer Priorities",
+      "duration": 540,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Clarify focus on operational database tasks, not theory",
+            "Set expectation: AI drafts, humans validate"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Common database pain points across teams",
+            "Where AI accelerates schema and query work",
+            "Safety-first mindset for data operations"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Schema Design Patterns",
+      "duration": 1500,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Use AI to accelerate schema design decisions"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Normalization trade-offs for read vs write workloads",
+            "Index strategy fundamentals",
+            "Migration planning and rollback safety"
+          ]
+        },
+        {
+          "label": "Chat Prompts",
+          "items": [
+            "What database engine does your team rely on most?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Query Optimization Demo",
+      "duration": 2100,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Demos",
+          "items": [
+            "Analyze a slow query and generate optimization suggestions",
+            "Create missing indexes based on query patterns",
+            "Rewrite a complex join into a more readable form"
+          ]
+        },
+        {
+          "label": "Rules",
+          "items": [
+            "Always test generated queries against a non-production dataset",
+            "Verify execution plans before applying index changes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Break",
+      "duration": 600,
+      "type": "break",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Post return time clearly",
+            "Resume exactly on schedule"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Migration and Maintenance Scripts",
+      "duration": 1800,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Generate safe migration scripts with rollback plans"
+          ]
+        },
+        {
+          "label": "Demos",
+          "items": [
+            "Draft a schema migration with up and down scripts",
+            "Generate data backfill logic with batch processing",
+            "Create maintenance window checklists from change descriptions"
+          ]
+        },
+        {
+          "label": "Reaction Prompts",
+          "items": [
+            "Has a migration ever gone wrong in production for you?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wrap Up & Next Steps",
+      "duration": 900,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Next Steps",
+          "items": [
+            "Optimize one known slow query using AI-assisted analysis",
+            "Add rollback scripts to your next scheduled migration"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "title": "API Design and Development with AI",
+  "segments": [
+    {
+      "title": "Welcome & API-First Mindset",
+      "duration": 480,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Establish API-first design as the organizing principle",
+            "Align on REST vs GraphQL baseline in the room"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Why contract-first design reduces rework",
+            "Where AI helps most in API lifecycle",
+            "Scope: design, build, document, test"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Contract Design with AI",
+      "duration": 1440,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Draft clear, consistent API contracts faster"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Naming conventions and resource modeling",
+            "Error response standardization",
+            "Versioning strategies and backward compatibility"
+          ]
+        },
+        {
+          "label": "Chat Prompts",
+          "items": [
+            "What is your biggest pain point with API consistency?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OpenAPI Spec Generation Demo",
+      "duration": 1800,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Demos",
+          "items": [
+            "Generate an OpenAPI specification from plain-language requirements",
+            "Add request validation schemas and example payloads",
+            "Produce client SDK stubs from the generated spec"
+          ]
+        },
+        {
+          "label": "Rules",
+          "items": [
+            "Validate generated specs against linting tools",
+            "Never publish specs without team review"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Break",
+      "duration": 600,
+      "type": "break",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Keep the session on schedule"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Integration Testing Demo",
+      "duration": 1500,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Generate thorough API test suites from specifications"
+          ]
+        },
+        {
+          "label": "Demos",
+          "items": [
+            "Create happy-path and edge-case test scenarios",
+            "Generate mock server configurations",
+            "Draft contract tests for upstream dependencies"
+          ]
+        },
+        {
+          "label": "Reaction Prompts",
+          "items": [
+            "How much of your API testing is automated today?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wrap Up & Next Steps",
+      "duration": 840,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Next Steps",
+          "items": [
+            "Generate an OpenAPI spec for one existing undocumented endpoint",
+            "Add contract tests to your CI pipeline for one service"
+          ]
+        }
+      ]
+    }
+  ]
+}

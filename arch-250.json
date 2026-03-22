@@ -1,0 +1,157 @@
+{
+  "title": "Software Architecture with AI",
+  "segments": [
+    {
+      "title": "Welcome & Architecture Thinking",
+      "duration": 600,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Frame AI as a design exploration partner, not a decision maker",
+            "Gauge audience seniority and architecture experience"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Trade-off analysis is the core architecture skill",
+            "AI can surface options faster but judgment stays human",
+            "Scope: system design, documentation, decision records"
+          ]
+        },
+        {
+          "label": "Chat Prompts",
+          "items": [
+            "What is your primary architecture role today?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "System Decomposition Strategies",
+      "duration": 1500,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Use AI to explore service boundary options quickly"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Domain-driven boundary identification",
+            "Coupling and cohesion trade-offs",
+            "Communication patterns between services"
+          ]
+        },
+        {
+          "label": "Reaction Prompts",
+          "items": [
+            "Monolith, microservices, or somewhere in between?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Architecture Decision Records Demo",
+      "duration": 1800,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Demos",
+          "items": [
+            "Generate an ADR from a verbal design discussion summary",
+            "Produce a trade-off matrix for two competing approaches",
+            "Draft a system context diagram description from requirements"
+          ]
+        },
+        {
+          "label": "Rules",
+          "items": [
+            "ADRs must reflect team consensus, not raw AI output",
+            "Always list rejected alternatives and rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Break",
+      "duration": 600,
+      "type": "break",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Reconfirm return time and restart promptly"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scalability and Resilience Patterns",
+      "duration": 1800,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Evaluate scalability patterns using AI-assisted analysis"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Caching strategies and invalidation trade-offs",
+            "Circuit breaker and retry pattern selection",
+            "Load distribution and partitioning approaches"
+          ]
+        },
+        {
+          "label": "Chat Prompts",
+          "items": [
+            "What scaling challenge keeps your team up at night?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Technical Debt Assessment",
+      "duration": 1320,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Use AI to prioritize and document technical debt"
+          ]
+        },
+        {
+          "label": "Demos",
+          "items": [
+            "Generate a technical debt inventory from codebase patterns",
+            "Produce effort-impact rankings for remediation",
+            "Draft refactoring proposals with risk assessments"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wrap Up & Next Steps",
+      "duration": 900,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Next Steps",
+          "items": [
+            "Write one ADR for your next design decision using AI assistance",
+            "Catalogue top three technical debt items with AI-generated summaries"
+          ]
+        }
+      ]
+    }
+  ]
+}

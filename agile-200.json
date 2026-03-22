@@ -1,0 +1,158 @@
+{
+  "title": "Agile Practices with AI",
+  "segments": [
+    {
+      "title": "Welcome & Agile Foundations Refresh",
+      "duration": 540,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Calibrate on agile maturity across the audience",
+            "Position AI as a ceremony and workflow accelerator"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Where teams lose time in agile ceremonies",
+            "AI assists process, not culture change",
+            "Scope: planning, standups, retros, and backlog management"
+          ]
+        },
+        {
+          "label": "Chat Prompts",
+          "items": [
+            "Which agile framework does your team follow?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Backlog Refinement with AI",
+      "duration": 1500,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Use AI to write clearer stories and acceptance criteria"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Story splitting strategies",
+            "Acceptance criteria that reduce ambiguity",
+            "Estimating complexity with AI-generated comparisons"
+          ]
+        },
+        {
+          "label": "Reaction Prompts",
+          "items": [
+            "How often do unclear stories cause rework on your team?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Story and Criteria Generation Demo",
+      "duration": 1800,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Demos",
+          "items": [
+            "Generate user stories from a feature brief",
+            "Produce detailed acceptance criteria with edge cases",
+            "Split an epic into right-sized stories with dependencies"
+          ]
+        },
+        {
+          "label": "Rules",
+          "items": [
+            "Generated stories must be reviewed by the product owner",
+            "AI estimates are conversation starters, not commitments"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Break",
+      "duration": 600,
+      "type": "break",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Announce return time",
+            "Restart promptly"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ceremony Efficiency Demo",
+      "duration": 1800,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Streamline standup summaries and retro facilitation"
+          ]
+        },
+        {
+          "label": "Demos",
+          "items": [
+            "Generate standup summary from ticket updates",
+            "Create retro prompts based on sprint metrics",
+            "Draft sprint review narratives from completed work"
+          ]
+        },
+        {
+          "label": "Chat Prompts",
+          "items": [
+            "Which ceremony feels least valuable to your team right now?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sprint Health Metrics",
+      "duration": 1320,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Generate actionable sprint health summaries with AI"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Velocity trends and what they actually indicate",
+            "Cycle time analysis for bottleneck detection",
+            "Presenting metrics without blame"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wrap Up & Commitments",
+      "duration": 840,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Next Steps",
+          "items": [
+            "Use AI to refine three backlog items before next sprint planning",
+            "Generate one sprint retrospective summary using AI prompts"
+          ]
+        }
+      ]
+    }
+  ]
+}

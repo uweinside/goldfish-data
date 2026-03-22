@@ -1,0 +1,130 @@
+{
+  "title": "Technical Documentation with AI",
+  "segments": [
+    {
+      "title": "Welcome & Documentation Value",
+      "duration": 480,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Reframe documentation as a productivity multiplier",
+            "Acknowledge common resistance and time constraints"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Cost of missing or outdated documentation",
+            "Where AI removes friction from writing",
+            "Class scope: code docs, guides, and runbooks"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prompt Patterns for Clear Writing",
+      "duration": 1320,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Craft prompts that produce accurate, audience-appropriate docs"
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Specifying audience and technical level",
+            "Requesting structure before prose",
+            "Iterative refinement for tone and depth"
+          ]
+        },
+        {
+          "label": "Reaction Prompts",
+          "items": [
+            "Who is the primary audience for your team's docs?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Code Documentation Demo",
+      "duration": 1500,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Demos",
+          "items": [
+            "Generate inline documentation for an undocumented module",
+            "Create a README with setup, usage, and contribution sections",
+            "Produce changelog entries from commit history summaries"
+          ]
+        },
+        {
+          "label": "Rules",
+          "items": [
+            "Verify all generated code examples compile and run",
+            "Review for accuracy before publishing"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Break",
+      "duration": 600,
+      "type": "break",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Keep the session on schedule"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Operational Runbook Generation",
+      "duration": 1500,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Objective",
+          "items": [
+            "Draft operational runbooks from existing tribal knowledge"
+          ]
+        },
+        {
+          "label": "Demos",
+          "items": [
+            "Generate an incident response runbook from past action items",
+            "Create onboarding guides from setup scripts and config files",
+            "Produce a troubleshooting decision tree from support tickets"
+          ]
+        },
+        {
+          "label": "Chat Prompts",
+          "items": [
+            "What knowledge lives only in someone's head on your team?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wrap Up & Next Steps",
+      "duration": 780,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Next Steps",
+          "items": [
+            "Generate a README for one undocumented project",
+            "Create one operational runbook from existing team knowledge"
+          ]
+        }
+      ]
+    }
+  ]
+}
