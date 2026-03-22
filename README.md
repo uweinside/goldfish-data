@@ -81,6 +81,7 @@ Each entry in a segment's `info` array adds a labelled list to the right-hand pa
 |----------|------------|----------|--------------------------------------------------------------------|
 | `label`  | `string`   | Yes      | Heading for the section. Also determines the accent color (below). |
 | `items`  | `string[]` | Yes      | Bullet points displayed under the label.                           |
+| `notes`  | `string[]` | No       | Optional long-form notes in Markdown, rendered as presenter guidance under the section. |
 
 ```json
 {
@@ -88,9 +89,20 @@ Each entry in a segment's `info` array adds a labelled list to the right-hand pa
   "items": [
     "Set expectations clearly upfront",
     "Explain delivery norms"
+  ],
+  "notes": [
+    "### Delivery script\nOpen by stating the expected outcomes and timing.",
+    "Use **bold** text for emphasis and lists for step-by-step reminders."
   ]
 }
 ```
+
+#### Notes field guidance
+
+- `notes` is optional; omit it when no long-form guidance is needed.
+- Each entry in `notes` is a Markdown string and can include headings, lists, emphasis, blockquotes, and fenced code blocks.
+- Use multiple `notes` entries for separate presenter aids (for example: speaking script, demo runbook, and fallback plan).
+- Keep `items` concise for on-screen scanning; place detailed facilitation content in `notes`.
 
 #### Label accent colors
 

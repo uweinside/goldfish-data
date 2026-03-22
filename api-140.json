@@ -19,6 +19,11 @@
             "Why contract-first design reduces rework",
             "Where AI helps most in API lifecycle",
             "Scope: design, build, document, test"
+          ],
+          "notes": [
+            "### Extended talking script\nStart with a quick story: *'Two teams shipped the same endpoint twice because the contract was in a ticket comment.'* Use this to show that API-first is about reducing ambiguity, not adding ceremony.",
+            "### Whiteboard sequence\n1. Draw **consumer -> contract -> provider**.\n2. Mark where rework occurs when the contract is late.\n3. Ask: *'Where in this flow are you currently validating assumptions?'*",
+            "### Transition line\nClose with: **'If we align on the contract first, AI can accelerate every step after it without multiplying mistakes.'**"
           ]
         }
       ]
@@ -40,6 +45,11 @@
             "Naming conventions and resource modeling",
             "Error response standardization",
             "Versioning strategies and backward compatibility"
+          ],
+          "notes": [
+            "### Resource modeling deep dive\nUse `/orders/{orderId}/items` as the baseline example. Contrast with action-heavy paths like `/getOrderItems` and explain why noun-first resources are easier to evolve.",
+            "### Error contract script\nRecommend a stable envelope:\n```json\n{\n  \"error\": {\n    \"code\": \"VALIDATION_FAILED\",\n    \"message\": \"email is required\",\n    \"traceId\": \"...\"\n  }\n}\n```\nEmphasize that clients should key off `code`, not `message`.",
+            "### Versioning caution\nExplain that adding optional fields is usually non-breaking, while changing enum meaning is breaking even if the shape is unchanged."
           ]
         },
         {
@@ -61,6 +71,11 @@
             "Generate an OpenAPI specification from plain-language requirements",
             "Add request validation schemas and example payloads",
             "Produce client SDK stubs from the generated spec"
+          ],
+          "notes": [
+            "### Demo runbook\n1. Paste a short product requirement paragraph.\n2. Prompt AI to produce an **OpenAPI 3.1** draft with reusable schemas.\n3. Validate with a linter and fix warnings live.\n4. Generate a TypeScript SDK and show one successful request call.",
+            "### Narration cues\nWhile generating the spec, narrate *why* each section matters: `paths` for behavior, `components` for reuse, and examples for consumer confidence.",
+            "### Failure recovery plan\nIf generated paths are inconsistent, pause and issue a corrective prompt: *'Normalize naming to kebab-case paths and standardize 4xx/5xx responses.'*"
           ]
         },
         {
@@ -102,6 +117,11 @@
             "Create happy-path and edge-case test scenarios",
             "Generate mock server configurations",
             "Draft contract tests for upstream dependencies"
+          ],
+          "notes": [
+            "### Test generation steps\n1. Import the OpenAPI document.\n2. Generate baseline happy-path tests.\n3. Expand to boundary cases for pagination, auth expiry, and malformed payloads.\n4. Tag tests by risk (`smoke`, `regression`, `contract`).",
+            "### Coaching script\nExplain that AI gives breadth quickly, but teams must still decide critical-path depth based on business impact and incident history.",
+            "### Mock server reminder\nShow one mock response drift issue and connect it to CI contract checks as the long-term fix."
           ]
         },
         {
