@@ -11,12 +11,18 @@
           "items": [
             "Frame AI as an accelerator for pipeline work",
             "Align on CI/CD maturity levels in the room"
+          ],
+          "notes": [
+            "## Test Note Alpha\n\nThis note is used to verify that **heading rendering** and *italic emphasis* both display correctly in the UI.\n\n### Section One: Ordered Steps\n\n1. Initialise the test environment.\n2. Load the fixture data into memory.\n3. Run the validation pass.\n4. Assert that `result.status` equals `\"OK\"`.\n5. Tear down and log output.\n\n### Section Two: Observations\n\n> \"A UI that cannot render Markdown reliably is a UI that cannot communicate reliably.\"\n\n> — Generic Test Quote, 2026\n\n### Section Three: Edge Cases to Watch\n\n- Empty strings in label fields.\n- Unicode characters: é, ñ, ü, 中文, 日本語.\n- Very long single-line strings without whitespace.\n- Nested arrays with zero items `[]`.\n\n---\n\n**End of note alpha.**"
           ]
         },
         {
           "label": "Chat Prompts",
           "items": [
             "What CI/CD platform does your team use today?"
+          ],
+          "notes": [
+            "## Test Note Beta\n\nThis note checks that **fenced code blocks** and **tables** render without breaking layout.\n\n### Sample Code Block\n\n```json\n{\n  \"id\": \"test-001\",\n  \"status\": \"pending\",\n  \"retries\": 3,\n  \"tags\": [\"alpha\", \"beta\", \"gamma\"],\n  \"meta\": {\n    \"createdAt\": \"2026-01-01T00:00:00Z\",\n    \"updatedAt\": null\n  }\n}\n```\n\n### Comparison Table\n\n| Property   | Expected Value | Actual Value | Pass? |\n|------------|----------------|--------------|-------|\n| `status`   | `\"pending\"`    | `\"pending\"`  | ✓     |\n| `retries`  | `3`            | `3`          | ✓     |\n| `tags[0]`  | `\"alpha\"`      | `\"alpha\"`    | ✓     |\n| `meta.id`  | `undefined`    | `undefined`  | ✓     |\n\n> **Reviewer note:** All assertions passed on first run. No environment tweaks needed.\n\n---\n\n*End of note beta.*"
           ]
         }
       ]

@@ -12,6 +12,9 @@
             "Set expectation: practical cloud operations with AI assistance",
             "Align audience on baseline Azure terminology",
             "Frame class outcomes around reliability and speed"
+          ],
+          "notes": [
+            "## Test Note Eta\n\nTesting **Python code block** rendering alongside mixed list formats.\n\n### Utility Function Example\n\n```python\nfrom __future__ import annotations\nfrom typing import Any, Generator\nimport json\nimport pathlib\n\n\ndef stream_json_objects(file_path: str) -> Generator[dict[str, Any], None, None]:\n    \"\"\"Yield top-level objects from a newline-delimited JSON file.\"\"\"\n    path = pathlib.Path(file_path)\n    if not path.exists():\n        raise FileNotFoundError(f\"No such file: {file_path!r}\")\n\n    with path.open(encoding=\"utf-8\") as fh:\n        for line_number, line in enumerate(fh, start=1):\n            line = line.strip()\n            if not line:\n                continue\n            try:\n                yield json.loads(line)\n            except json.JSONDecodeError as exc:\n                raise ValueError(\n                    f\"Invalid JSON on line {line_number}: {exc}\"\n                ) from exc\n```\n\n### When to Use This Pattern\n\n1. **Large files** that cannot fit in memory as a single parsed object.\n2. **Streaming pipelines** where each record should be processed independently.\n3. **Incremental writes** where the file is still being appended to by another process.\n\nAdditional caveats:\n\n- Does **not** support multi-line JSON objects (each object must be on a single line).\n- The caller is responsible for closing the file — the generator handles it via context manager.\n- Errors on individual lines raise immediately; there is no skip-and-continue mode.\n\n---\n\n*End of note eta.*"
           ]
         },
         {
@@ -20,6 +23,9 @@
             "Where Copilot helps in daily cloud tasks",
             "Why validation matters for operational changes",
             "How this class differs from architecture classes"
+          ],
+          "notes": [
+            "## Test Note Theta\n\nValidates **SQL code block** rendering and column-aligned tables with special characters.\n\n### Query Example\n\n```sql\n-- Retrieve the top 10 sessions by event count in the last 30 days\nSELECT\n    s.session_id,\n    s.user_id,\n    u.email,\n    COUNT(e.event_id)   AS event_count,\n    MIN(e.occurred_at)  AS first_event,\n    MAX(e.occurred_at)  AS last_event\nFROM sessions          AS s\nJOIN users             AS u  ON u.user_id   = s.user_id\nJOIN events            AS e  ON e.session_id = s.session_id\nWHERE\n    e.occurred_at >= NOW() - INTERVAL '30 days'\n    AND s.is_deleted  = FALSE\n    AND u.is_active   = TRUE\nGROUP BY\n    s.session_id,\n    s.user_id,\n    u.email\nORDER BY\n    event_count DESC\nLIMIT 10;\n```\n\n### Index Strategy\n\n| Column(s)            | Index Type | Notes                                      |\n|----------------------|------------|--------------------------------------------|\n| `events.occurred_at` | BRIN       | Effective for append-only time-series data |\n| `events.session_id`  | B-tree     | Foreign key — always index FK columns      |\n| `users.is_active`    | Partial    | `WHERE is_active = TRUE` reduces size       |\n| `sessions.user_id`   | B-tree     | Required for the JOIN path                 |\n\n> **Performance note:** Without the `occurred_at` index, this query performs a full table scan on `events`, which may take several seconds on large datasets.\n\n---\n\n*End of note theta.*"
           ]
         }
       ]

@@ -11,6 +11,9 @@
           "items": [
             "Reframe documentation as a productivity multiplier",
             "Acknowledge common resistance and time constraints"
+          ],
+          "notes": [
+            "## Test Note Gamma\n\nVerify that **nested bullet lists** and **horizontal rules** render with correct indentation.\n\n### Nested List Structure\n\n- Top-level item A\n  - Sub-item A1\n    - Deep item A1a\n    - Deep item A1b\n  - Sub-item A2\n- Top-level item B\n  - Sub-item B1\n- Top-level item C (no children)\n\n---\n\n### Mixed Emphasis\n\nThis paragraph uses ***bold italic***, plain text, `inline code`, and ~~strikethrough~~ all on the same line to stress-test inline parsing.\n\n---\n\n### Long Paragraph for Vertical Scroll Testing\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.\n\nCurabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis molestie dictum semper, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.\n\n---\n\n*End of note gamma.*"
           ]
         },
         {
@@ -19,6 +22,9 @@
             "Cost of missing or outdated documentation",
             "Where AI removes friction from writing",
             "Class scope: code docs, guides, and runbooks"
+          ],
+          "notes": [
+            "## Test Note Delta\n\nThis note tests **shell code blocks** and **warning-style blockquotes**.\n\n### Setup Commands\n\n```bash\n# Install dependencies\nnpm install\n\n# Run tests in watch mode\nnpm test -- --watch\n\n# Build for production\nnpm run build -- --mode=production\n\n# Check for outdated packages\nnpm outdated\n```\n\n### Pre-Flight Checklist\n\n- [x] Environment variables configured\n- [x] Database seed applied\n- [ ] Integration endpoints reachable\n- [ ] Load balancer health checks passing\n- [ ] Monitoring alerts silenced for deployment window\n\n### Warning\n\n> ⚠️ **Do not run these commands on a production database without a verified backup.**\n> Snapshot the volume first, confirm the snapshot ID, then proceed.\n\n### Notes on Idempotency\n\nEnsure every step in the setup sequence is **idempotent** — running it twice should produce the same result as running it once. This is critical for automated CI pipelines where steps may be retried on transient failure.\n\n---\n\n*End of note delta.*"
           ]
         }
       ]

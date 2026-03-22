@@ -11,6 +11,9 @@
           "items": [
             "Clarify focus on operational database tasks, not theory",
             "Set expectation: AI drafts, humans validate"
+          ],
+          "notes": [
+            "## Test Note Iota\n\nTesting **YAML code block** rendering alongside reflective question prompts.\n\n### Sample Configuration\n\n```yaml\nservice:\n  name: test-service\n  version: \"2.4.1\"\n  environment: staging\n\nserver:\n  host: 0.0.0.0\n  port: 8080\n  timeouts:\n    read: 30s\n    write: 30s\n    idle: 120s\n\ndatabase:\n  driver: postgres\n  host: db.internal\n  port: 5432\n  name: testdb\n  pool:\n    min: 2\n    max: 20\n    acquire_timeout: 5s\n\nlogging:\n  level: info\n  format: json\n  outputs:\n    - stdout\n    - file:/var/log/test-service/app.log\n```\n\n### Known Configuration Pitfalls\n\n- Setting `pool.max` too high exhausts database connections across multiple replicas.\n- `timeouts.idle` should exceed the load balancer's keep-alive timeout by at least 10 seconds.\n- Never commit credentials in YAML — use environment variable interpolation (`${DB_PASSWORD}`).\n- The `format: json` setting requires a log aggregator that can parse structured logs.\n\n### Reflective Questions\n\n1. Does your staging configuration differ significantly from production? If so, how do you track divergence?\n2. Are your timeout values tested under realistic network latency, or only on localhost?\n3. What is your rollback plan if a configuration change causes a silent failure?\n\n---\n\n*End of note iota.*"
           ]
         },
         {
@@ -19,6 +22,9 @@
             "Common database pain points across teams",
             "Where AI accelerates schema and query work",
             "Safety-first mindset for data operations"
+          ],
+          "notes": [
+            "## Test Note Kappa\n\nThis note tests **diff code block** rendering and analogy-style two-column comparisons.\n\n### Example Diff\n\n```diff\n--- a/src/config/defaults.ts\n+++ b/src/config/defaults.ts\n@@ -12,7 +12,7 @@ export const DEFAULT_CONFIG: Config = {\n   server: {\n     host: '0.0.0.0',\n-    port: 3000,\n+    port: 8080,\n     timeouts: {\n-      read: 15_000,\n+      read: 30_000,\n       write: 30_000,\n     },\n   },\n@@ -24,6 +24,10 @@ export const DEFAULT_CONFIG: Config = {\n   logging: {\n     level: 'warn',\n+    format: 'json',\n+    outputs: ['stdout'],\n   },\n };\n```\n\n### Analogy: Old Approach vs New Approach\n\n| Old Approach                             | New Approach                                  |\n|------------------------------------------|-----------------------------------------------|\n| Hard-coded values scattered across files | Single source-of-truth config object           |\n| Changes require touching multiple files  | One file to update, types enforce completeness |\n| No visibility into defaults at runtime   | Config logged (redacted) on startup            |\n| Unit tests mock individual constants     | Tests inject a full config fixture             |\n\n### Summary of Changes in This Note\n\n- Port updated from `3000` to `8080` to align with internal routing rules.\n- Read timeout doubled to handle upstream latency spikes observed in staging.\n- Logging format standardised to JSON for compatibility with the log aggregator.\n- Outputs array introduced to allow writing to both stdout and rotating file sinks.\n\n> \"Small configuration changes can have large operational consequences — treat them like code.\"\n\n---\n\n*End of note kappa.*"
           ]
         }
       ]
