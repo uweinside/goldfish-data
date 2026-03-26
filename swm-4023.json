@@ -1,64 +1,283 @@
 {
   "title": "M365 Copilot Chat Training",
+  "duration": 5400,
   "segments": [
-    { "title": "Welcome & Setup", "duration": 240, "type": "intro", "info": [
-      { "label": "Slide", "items": ["Welcome Slide"] },
-      { "label": "Intro", "items": [], "notes": ["Hello, hello, good day, good afternoon, good morning, good evening, wherever you are.\n\nHello, hello. Welcome at this training about transforming ideas into action with Copilot Chat.\n\nI'm really happy that you are here. I'm really happy that you want to take some time away from your busy calendar and stay with me for one hour, one hour and a half.\n\nThat's what we need to dive into this Copilot Chat session.\n\nI see a lot of people here. Thank you very much for joining. Thank you very much for taking the time."] },
-      { "label": "Narration", "items": [], "notes": ["You see that we are in a normal Teams meeting, so that means that I have put on transcriptions.\n\nYou can change the language. You can show live captions.\n\nWhat you see on my slide are the steps that you can follow if you want to change your language.\n\nYou can also continue and set the translation, select the language to your preferred language, if you will.\n\nPlease do so."] }
-    ]},
-    { "title": "Ground Rules & Interaction", "duration": 360, "type": "interaction", "info": [
-      { "label": "Narration", "items": [], "notes": ["You're very welcome to do that if you are speaking a different language and you want me as a translator, but then in text, of course.\n\nAgain, really happy that you are here. We have a lot of people in this call.\n\nThat's very nice, but we need to agree on a couple of things."] },
-      { "label": "Narration", "items": [], "notes": ["First of all, you can unmute yourself. You can put on your camera, and that's something that I really prefer.\n\nJust to see a couple of faces nodding or smiling to me — that's better for my brain if I'm going to see that.\n\nThank you for doing that. I really appreciate it."] },
-      { "label": "Narration", "items": [], "notes": ["On the other hand, I want you to stay on mute during this training.\n\nI have a colleague that is going to answer all of your questions.\n\nIf you have any question around the topics that we are going to discuss today, anything that comes to mind, please ask your question in the chat."] },
-      { "label": "Narration", "items": [], "notes": ["We will have some time at the end of this training to do a quick Q&A.\n\nBut during the session, Horan will provide you each and every answer in the chat.\n\nThere are no stupid questions today.\n\nIf you want to know something that you are struggling with — just ask.\n\nDon't hesitate. Now is the time."] },
-      { "label": "Interaction", "items": ["Explain reactions"], "notes": ["Let’s also agree on the use of our React button.\n\nInside of Teams, you will see that you have the React button.\n\nIf the answer is yes — thumbs up.\n\nIf the answer is no — use the surprised icon.\n\nIf we agree on that, we have good guardrails for this training."] }
-    ]},
-    { "title": "Agenda & Introduction", "duration": 300, "type": "lecture", "info": [
-      { "label": "Slide", "items": ["Agenda"] },
-      { "label": "Narration", "items": [], "notes": ["About this training — what are we going to go through?\n\nWe have a training tailored for all of you, business users.\n\nAny type of user is welcome.\n\nToday, we are going to get started with using M365 Copilot Chat.\n\nIf you are already using it, I will show you what you can do more to be even more productive."] },
-      { "label": "Narration", "items": [], "notes": ["My name is Karel De Winter. I'm based in Belgium.\n\nI'm here together with my colleague, Horan.\n\nHoran is going to answer all your questions — I'm here to present the content."] },
-      { "label": "Narration", "items": [], "notes": ["If you want to get in touch with me, you can.\n\nPlease go to aka.ms forward slash whoiskarel.\n\nHappy to connect with all of you."] },
-      { "label": "Narration", "items": [], "notes": ["Today we are going to see three modules.\n\nModule one: M365 Copilot Chat basics.\n\nModule two: Writing effective prompts.\n\nModule three: Working smarter with Copilot."] },
-      { "label": "Interaction", "items": ["Thumbs up check"], "notes": ["Give me a thumbs up if you are ready for the first module.\n\nIf you want to proceed — thumbs up, high five.\n\nGood — let’s get started."] }
-    ]},
-    { "title": "What is Copilot Chat", "duration": 240, "type": "lecture", "info": [
-      { "label": "Slide", "items": ["What is Copilot"] },
-      { "label": "Narration", "items": [], "notes": ["What is it?\n\nFirst of all, if we talk about M365 Copilot Chat — it is our AI assistant.\n\nWhat is an AI assistant?\n\nWell, it's in the word — it's still an assistant."] },
-      { "label": "Narration", "items": [], "notes": ["You need to instruct Copilot to do exactly what you want.\n\nAsk very specifically what you want to get out of Copilot.\n\nThat is very important.\n\nThat’s what we are going to learn today."] }
-    ]},
-    { "title": "Grounding Concept", "duration": 420, "type": "lecture", "info": [
-      { "label": "Narration", "items": [], "notes": ["Another very important concept is grounding.\n\nWe are going to ground Copilot conversations using work and web-related data.\n\nThere are two ways that we can ground Copilot."] },
-      { "label": "Narration", "items": [], "notes": ["What is grounding?\n\nGrounding is adding additional information to large language models.\n\nA very important concept."] },
-      { "label": "Narration", "items": [], "notes": ["A large language model has been trained on a very large dataset.\n\nThat dataset comes from the internet — articles, books, social media.\n\nThe model understands natural language very well."] },
-      { "label": "Narration", "items": [], "notes": ["But — the model only knows data up to a certain point in time.\n\nThat means if you ask about today’s news — it doesn’t know.\n\nIt needs grounding to fetch that information."] }
-    ]},
-    { "title": "Access & Licensing", "duration": 600, "type": "lecture", "info": [
-      { "label": "Slide", "items": ["Access Copilot"] },
-      { "label": "Narration", "items": [], "notes": ["M365 Copilot Chat is available at no cost with your Microsoft 365 subscription.\n\nIf you use Word, Excel, Outlook — you already have access."] },
-      { "label": "Narration", "items": [], "notes": ["There is also an additional Copilot license.\n\nThat is an add-on.\n\nThe key difference: access to work data."] },
-      { "label": "Demo", "items": ["Open m365copilot.com"], "notes": ["Let me show you how to access it.\n\nGo to m365copilot.com.\n\nIf you remember one thing today — remember this URL.\n\nSign in with your corporate account."] },
-      { "label": "Narration", "items": [], "notes": ["Some of you may know copilot.microsoft.com.\n\nThat is different — that is the individual Copilot.\n\nToday we focus on M365 Copilot Chat."] }
-    ]},
-    { "title": "Interface Walkthrough", "duration": 600, "type": "demo", "info": [
-      { "label": "Demo", "items": ["Show interface"], "notes": ["This is the Copilot interface.\n\nThis is where everything happens."] },
-      { "label": "Narration", "items": [], "notes": ["At the bottom — the prompt box.\n\nThis is where you write your instructions.\n\nThis is where everything starts."] },
-      { "label": "Narration", "items": [], "notes": ["You can also upload files.\n\nYou can add additional context.\n\nThis is where Copilot becomes powerful."] }
-    ]},
-    { "title": "Security & Data Access", "duration": 600, "type": "lecture", "info": [
-      { "label": "Interaction", "items": ["Question: Does Copilot access your files?"], "notes": ["Quick question.\n\nDo you think Copilot has access to your documents?\n\nThumbs up for yes — surprised for no."] },
-      { "label": "Narration", "items": [], "notes": ["The answer is — no.\n\nCopilot does not access your documents directly.\n\nIt uses Microsoft Graph."] },
-      { "label": "Narration", "items": [], "notes": ["Microsoft Graph is the security layer.\n\nIf you have access — Copilot has access.\n\nIf you don’t — Copilot does not."] },
-      { "label": "Narration", "items": [], "notes": ["This means your data stays secure.\n\nIt respects permissions, policies, and sensitivity labels."] }
-    ]},
-    { "title": "Enterprise Data Protection", "duration": 600, "type": "lecture", "info": [
-      { "label": "Narration", "items": [], "notes": ["Microsoft guarantees enterprise data protection.\n\nYour data stays in your region.\n\nIt does not leave your tenant."] },
-      { "label": "Narration", "items": [], "notes": ["All communication is encrypted.\n\nEncryption in transit.\n\nEncryption at rest."] },
-      { "label": "Narration", "items": [], "notes": ["And the most important part:\n\nYour data is never used to train the model.\n\nNever."] }
-    ]}
-  ]
-}
-{
-  "sections": [
+    {
+      "title": "Welcome & Setup",
+      "duration": 240,
+      "type": "intro",
+      "info": [
+        {
+          "label": "Slide",
+          "items": ["Welcome Slide"]
+        },
+        {
+          "label": "Intro",
+          "notes": [
+            "Hello, hello, good day, good afternoon, good morning, good evening, wherever you are.\n\nHello, hello. Welcome at this training about transforming ideas into action with Copilot Chat.\n\nI'm really happy that you are here. I'm really happy that you want to take some time away from your busy calendar and stay with me for one hour, one hour and a half.\n\nThat's what we need to dive into this Copilot Chat session.\n\nI see a lot of people here. Thank you very much for joining. Thank you very much for taking the time."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "You see that we are in a normal Teams meeting, so that means that I have put on transcriptions.\n\nYou can change the language. You can show live captions.\n\nWhat you see on my slide are the steps that you can follow if you want to change your language.\n\nYou can also continue and set the translation, select the language to your preferred language, if you will.\n\nPlease do so."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ground Rules & Interaction",
+      "duration": 360,
+      "type": "interaction",
+      "info": [
+        {
+          "label": "Narration",
+          "notes": [
+            "You're very welcome to do that if you are speaking a different language and you want me as a translator, but then in text, of course.\n\nAgain, really happy that you are here. We have a lot of people in this call.\n\nThat's very nice, but we need to agree on a couple of things."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "First of all, you can unmute yourself. You can put on your camera, and that's something that I really prefer.\n\nJust to see a couple of faces nodding or smiling to me — that's better for my brain if I'm going to see that.\n\nThank you for doing that. I really appreciate it."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "On the other hand, I want you to stay on mute during this training.\n\nI have a colleague that is going to answer all of your questions.\n\nIf you have any question around the topics that we are going to discuss today, anything that comes to mind, please ask your question in the chat."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "We will have some time at the end of this training to do a quick Q&A.\n\nBut during the session, Horan will provide you each and every answer in the chat.\n\nThere are no stupid questions today.\n\nIf you want to know something that you are struggling with — just ask.\n\nDon't hesitate. Now is the time."
+          ]
+        },
+        {
+          "label": "Interaction",
+          "items": ["Explain reactions"],
+          "notes": [
+            "Let’s also agree on the use of our React button.\n\nInside of Teams, you will see that you have the React button.\n\nIf the answer is yes — thumbs up.\n\nIf the answer is no — use the surprised icon.\n\nIf we agree on that, we have good guardrails for this training."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agenda & Introduction",
+      "duration": 300,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Slide",
+          "items": ["Agenda"]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "About this training — what are we going to go through?\n\nWe have a training tailored for all of you, business users.\n\nAny type of user is welcome.\n\nToday, we are going to get started with using M365 Copilot Chat.\n\nIf you are already using it, I will show you what you can do more to be even more productive."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "My name is Karel De Winter. I'm based in Belgium.\n\nI'm here together with my colleague, Horan.\n\nHoran is going to answer all your questions — I'm here to present the content."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "If you want to get in touch with me, you can.\n\nPlease go to aka.ms forward slash whoiskarel.\n\nHappy to connect with all of you."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "Today we are going to see three modules.\n\nModule one: M365 Copilot Chat basics.\n\nModule two: Writing effective prompts.\n\nModule three: Working smarter with Copilot."
+          ]
+        },
+        {
+          "label": "Interaction",
+          "items": ["Thumbs up check"],
+          "notes": [
+            "Give me a thumbs up if you are ready for the first module.\n\nIf you want to proceed — thumbs up, high five.\n\nGood — let’s get started."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "What is Copilot Chat",
+      "duration": 240,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Slide",
+          "items": ["What is Copilot"]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "What is it?\n\nFirst of all, if we talk about M365 Copilot Chat — it is our AI assistant.\n\nWhat is an AI assistant?\n\nWell, it's in the word — it's still an assistant."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "You need to instruct Copilot to do exactly what you want.\n\nAsk very specifically what you want to get out of Copilot.\n\nThat is very important.\n\nThat’s what we are going to learn today."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grounding Concept",
+      "duration": 420,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Narration",
+          "notes": [
+            "Another very important concept is grounding.\n\nWe are going to ground Copilot conversations using work and web-related data.\n\nThere are two ways that we can ground Copilot."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "What is grounding?\n\nGrounding is adding additional information to large language models.\n\nA very important concept."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "A large language model has been trained on a very large dataset.\n\nThat dataset comes from the internet — articles, books, social media.\n\nThe model understands natural language very well."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "But — the model only knows data up to a certain point in time.\n\nThat means if you ask about today’s news — it doesn’t know.\n\nIt needs grounding to fetch that information."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Access & Licensing",
+      "duration": 600,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Slide",
+          "items": ["Access Copilot"]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "M365 Copilot Chat is available at no cost with your Microsoft 365 subscription.\n\nIf you use Word, Excel, Outlook — you already have access."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "There is also an additional Copilot license.\n\nThat is an add-on.\n\nThe key difference: access to work data."
+          ]
+        },
+        {
+          "label": "Demo",
+          "items": ["Open m365copilot.com"],
+          "notes": [
+            "Let me show you how to access it.\n\nGo to m365copilot.com.\n\nIf you remember one thing today — remember this URL.\n\nSign in with your corporate account."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "Some of you may know copilot.microsoft.com.\n\nThat is different — that is the individual Copilot.\n\nToday we focus on M365 Copilot Chat."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Interface Walkthrough",
+      "duration": 600,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Demo",
+          "items": ["Show interface"],
+          "notes": [
+            "This is the Copilot interface.\n\nThis is where everything happens."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "At the bottom — the prompt box.\n\nThis is where you write your instructions.\n\nThis is where everything starts."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "You can also upload files.\n\nYou can add additional context.\n\nThis is where Copilot becomes powerful."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security & Data Access",
+      "duration": 600,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Interaction",
+          "items": ["Question: Does Copilot access your files?"],
+          "notes": [
+            "Quick question.\n\nDo you think Copilot has access to your documents?\n\nThumbs up for yes — surprised for no."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "The answer is — no.\n\nCopilot does not access your documents directly.\n\nIt uses Microsoft Graph."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "Microsoft Graph is the security layer.\n\nIf you have access — Copilot has access.\n\nIf you don’t — Copilot does not."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "This means your data stays secure.\n\nIt respects permissions, policies, and sensitivity labels."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Enterprise Data Protection",
+      "duration": 600,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Narration",
+          "notes": [
+            "Microsoft guarantees enterprise data protection.\n\nYour data stays in your region.\n\nIt does not leave your tenant."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "All communication is encrypted.\n\nEncryption in transit.\n\nEncryption at rest."
+          ]
+        },
+        {
+          "label": "Narration",
+          "notes": [
+            "And the most important part:\n\nYour data is never used to train the model.\n\nNever."
+          ]
+        }
+      ]
+    },
     {
       "title": "Transition to Prompting",
       "duration": 180,
@@ -293,11 +512,7 @@
           ]
         }
       ]
-    }
-  ]
-}
-{
-  "sections": [
+    },
     {
       "title": "Transition to Working Smarter",
       "duration": 180,
