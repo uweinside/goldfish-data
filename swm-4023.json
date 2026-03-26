@@ -1,5 +1,5 @@
 {
-  "title": "Microsoft 365 Copilot Chat Fundamentals",
+  "title": "Microsoft 365 Copilot Chat – Teleprompter Flow",
   "segments": [
     {
       "title": "Welcome & Setup",
@@ -7,62 +7,78 @@
       "type": "lecture",
       "info": [
         {
-          "label": "Trainer Focus",
-          "items": [
-            "Set expectations and tone",
-            "Explain interaction model (chat, reactions)",
-            "Create energy early"
-          ],
+          "label": "Slide",
+          "items": ["Welcome Slide"]
+        },
+        {
+          "label": "Intro",
+          "items": ["Welcome participants"],
           "notes": [
-            "### Opening Script\n\nWelcome everyone — great to have you here.\n\nToday we’ll spend about 90 minutes on Microsoft 365 Copilot Chat — and more importantly, how to actually use it effectively in your daily work.\n\nQuick setup:\n- Feel free to turn on your camera if you like\n- Please stay muted during the session\n- Ask questions anytime in chat\n- We’ll have time for Q&A at the end\n\nWe’ll also use reactions:\n👍 = yes\n😲 = no\n\nQuick check — who has already used Copilot?"
+            "Welcome everyone — great to have you here.\n\nToday we’ll spend about 90 minutes on Microsoft 365 Copilot Chat — and more importantly, how to actually use it effectively in your daily work."
           ]
         },
         {
-          "label": "Slide",
-          "items": [
-            "Welcome",
-            "Agenda overview"
+          "label": "Narration",
+          "items": ["Explain session format"],
+          "notes": [
+            "Quick setup:\n\n- Feel free to turn on your camera if you like\n- Please stay muted during the session\n- Ask questions anytime in chat\n- We’ll have time for Q&A at the end"
+          ]
+        },
+        {
+          "label": "Interaction",
+          "items": ["Audience check"],
+          "notes": [
+            "We’ll also use reactions:\n👍 = yes\n😲 = no\n\nQuick check — who has already used Copilot?"
           ]
         }
       ]
     },
     {
-      "title": "What is Copilot Chat",
+      "title": "What is Copilot",
       "duration": 1200,
       "type": "lecture",
       "info": [
         {
-          "label": "Objective",
-          "items": [
-            "Understand Copilot as an AI assistant",
-            "Introduce grounding concept",
-            "Differentiate Copilot types"
-          ],
+          "label": "Slide",
+          "items": ["What is Copilot"]
+        },
+        {
+          "label": "Segue",
+          "items": ["Transition into topic"],
           "notes": [
-            "### Transition\n\nLet’s start with the basics — what Copilot actually is.\n\n### Script\n\nCopilot is an AI assistant.\n\nBut — and this is important — it’s still just an assistant.\n\nIt doesn’t magically know what you want.\nYou need to tell it clearly.\n\nAnd that leads to one key principle:\n\nBetter prompt → better result."
+            "Let’s start with the basics — what Copilot actually is."
           ]
         },
         {
-          "label": "Talking Points",
-          "items": [
-            "Copilot is based on large language models",
-            "Models are trained on static data",
-            "Grounding provides context",
-            "Web grounding vs Work grounding",
-            "M365 Copilot Chat vs licensed Copilot"
-          ],
+          "label": "Narration 1",
+          "items": ["Explain Copilot concept"],
           "notes": [
-            "### Grounding Explanation\n\nCopilot is trained on a huge dataset — but that data is static.\n\nSo how do we get current or company-specific data?\n\nThat’s where grounding comes in.\n\nGrounding = adding context to the model.\n\nTwo types:\n- Web grounding → public internet\n- Work grounding → your M365 data (emails, docs, Teams)\n\nAnd this is the real value in enterprise scenarios."
+            "Copilot is an AI assistant.\n\nBut — and this is important — it’s still just an assistant.\n\nIt doesn’t magically know what you want.\n\nYou need to tell it clearly what you want."
+          ]
+        },
+        {
+          "label": "Narration 2",
+          "items": ["Introduce key principle"],
+          "notes": [
+            "And that leads to one key principle:\n\nBetter prompt → better result."
+          ]
+        },
+        {
+          "label": "Slide",
+          "items": ["Grounding"]
+        },
+        {
+          "label": "Narration 3",
+          "items": ["Explain grounding"],
+          "notes": [
+            "Copilot is trained on large language models.\n\nThat data is static.\n\nSo how do we get current or company-specific data?\n\nThat’s where grounding comes in.\n\nGrounding means adding context to the model.\n\nTwo types:\n- Web grounding → internet\n- Work grounding → your company data"
           ]
         },
         {
           "label": "Demo",
-          "items": [
-            "Open m365copilot.com",
-            "Show chat interface"
-          ],
+          "items": ["Open Copilot Chat"],
           "notes": [
-            "### Demo Script\n\nIf you remember one thing from today — it’s this URL.\n\nGo to m365copilot.com.\n\nThis is your entry point into Copilot Chat.\n\nEverything we discuss today starts here."
+            "Let me show you where all of this happens.\n\nGo to m365copilot.com.\n\nIf you remember one thing today — it’s this URL.\n\nThis is your entry point into Copilot Chat."
           ]
         }
       ]
@@ -73,90 +89,106 @@
       "type": "demo",
       "info": [
         {
-          "label": "Objective",
-          "items": [
-            "Teach effective prompting",
-            "Improve output quality",
-            "Introduce reusable framework"
+          "label": "Slide",
+          "items": ["Prompting"]
+        },
+        {
+          "label": "Segue",
+          "items": ["Transition"],
+          "notes": [
+            "Now that we understand what Copilot is — let’s talk about how to actually get good results from it."
           ]
         },
         {
-          "label": "Trainer Focus",
-          "items": [
-            "Use simple examples",
-            "Show bad vs good prompts",
-            "Engage audience"
-          ],
+          "label": "Narration 1",
+          "items": ["Why prompting matters"],
           "notes": [
-            "### Script\n\nCopilot is powerful — but only as good as your prompt.\n\nIf your input is vague, your output will be vague.\n\nSo let’s fix that."
+            "Copilot is powerful — but only as good as your prompt.\n\nIf your input is vague, your output will be vague."
           ]
         },
         {
           "label": "Slide",
-          "items": [
-            "Prompt Framework"
+          "items": ["Prompt Framework"]
+        },
+        {
+          "label": "Narration 2",
+          "items": ["Explain framework"],
+          "notes": [
+            "Think of prompts in four parts:\n\n1. Goal\n2. Context\n3. Instructions\n4. Output format"
           ]
         },
         {
-          "label": "Talking Points",
-          "items": [
-            "Goal",
-            "Context",
-            "Instructions",
-            "Output format"
-          ],
+          "label": "Demo 1",
+          "items": ["Bad prompt"],
           "notes": [
-            "### Framework Explanation\n\nThink of prompts in four parts:\n\n1. Goal — what do you want?\n2. Context — what should Copilot know?\n3. Instructions — what should it do?\n4. Output format — how should it respond?\n\nExample:\n\nBad: Write an email\n\nBetter: Write a professional email to a customer declining a request, polite tone, 5 sentences."
+            "Let’s start with a bad example.\n\nWrite an email.\n\nThis is too vague — Copilot doesn’t know what you want."
           ]
         },
         {
-          "label": "Demo",
-          "items": [
-            "Show bad prompt",
-            "Improve step by step",
-            "Add structure"
-          ],
+          "label": "Demo 2",
+          "items": ["Improve prompt"],
           "notes": [
-            "### Demo Script\n\nLet’s improve this together.\n\nWhat’s missing?\n\nWe start vague — then add clarity step by step.\n\nWatch how the output improves with each refinement."
+            "Now let’s improve it step by step.\n\nWrite a professional email to a customer declining a request, polite tone, 5 sentences.\n\nMuch better — now Copilot has direction."
+          ]
+        },
+        {
+          "label": "Interaction",
+          "items": ["Ask audience"],
+          "notes": [
+            "What do you think is missing in the first prompt?\n\nLet’s build a better one together."
           ]
         }
       ]
     },
     {
-      "title": "Working Smarter with Copilot",
+      "title": "Working Smarter",
       "duration": 1500,
       "type": "lecture",
       "info": [
         {
-          "label": "Objective",
-          "items": [
-            "Show real-world usage",
-            "Introduce advanced features",
-            "Position Copilot as workflow tool"
+          "label": "Slide",
+          "items": ["Copilot in Apps"]
+        },
+        {
+          "label": "Segue",
+          "items": ["Transition"],
+          "notes": [
+            "Now let’s move from basics to real-world usage."
           ]
         },
         {
-          "label": "Talking Points",
-          "items": [
-            "Copilot in Word, Excel, PowerPoint, Teams, Outlook",
-            "Same engine, different context",
-            "Sharing conversations",
-            "Copilot Pages",
-            "Agents"
-          ],
+          "label": "Narration 1",
+          "items": ["Copilot ecosystem"],
           "notes": [
-            "### Script\n\nCopilot is not just one tool.\n\nIt exists across the entire Microsoft 365 ecosystem.\n\nSame AI — different context.\n\nAnd that context is what makes it powerful."
+            "Copilot is not just one tool.\n\nYou’ll find it in Word, Excel, PowerPoint, Teams, Outlook.\n\nSame AI — different context."
           ]
         },
         {
-          "label": "Demo",
-          "items": [
-            "Show conversation sharing",
-            "Show Copilot Pages",
-            "Explain agents concept"
-          ],
+          "label": "Narration 2",
+          "items": ["Sharing"],
           "notes": [
-            "### Demo Script\n\nYou can share Copilot conversations.\n\nThink of them as reusable knowledge.\n\nCopilot Pages turn chat into structured documents.\n\nAnd agents?\n\nThey let you define behavior once — instead of prompting every time."
+            "You can share Copilot conversations.\n\nThink of them as reusable knowledge."
+          ]
+        },
+        {
+          "label": "Demo 1",
+          "items": ["Show sharing"],
+          "notes": [
+            "Let me show you how sharing works.\n\nYou can send this conversation to a colleague — and they can continue from there."
+          ]
+        },
+        {
+          "label": "Narration 3",
+          "items": ["Pages"],
+          "notes": [
+            "Copilot Pages turn chats into structured documents.\n\nThis is where things become reusable."
+          ]
+        },
+        {
+          "label": "Narration 4",
+          "items": ["Agents"],
+          "notes": [
+            "And then we have agents.\n\nInstead of prompting every time — you define behavior once."
           ]
         }
       ]
@@ -167,13 +199,10 @@
       "type": "break",
       "info": [
         {
-          "label": "Trainer Focus",
-          "items": [
-            "Clearly communicate return time",
-            "Restart on time"
-          ],
+          "label": "Break",
+          "items": ["Pause"],
           "notes": [
-            "### Script\n\nLet’s take a short 5-minute break.\n\nWhen we come back, we’ll continue with practical usage and wrap things up.\n\nSee you in 5."
+            "Let’s take a short 5-minute break.\n\nWhen we come back, we’ll wrap up and take your questions."
           ]
         }
       ]
@@ -184,23 +213,21 @@
       "type": "lecture",
       "info": [
         {
-          "label": "Key Takeaways",
-          "items": [
-            "Copilot is an assistant — be specific",
-            "Prompt quality matters",
-            "Grounding drives value"
-          ],
+          "label": "Slide",
+          "items": ["Key Takeaways"]
+        },
+        {
+          "label": "Narration",
+          "items": ["Summarize"],
           "notes": [
-            "### Closing Script\n\nIf you remember three things from today:\n\n1. Copilot is an assistant — be specific\n2. Prompt quality matters\n3. Work grounding is where the real value is\n\nCopilot is not magic — it’s a tool that amplifies your skills.\n\nThe better you prompt, the better it performs."
+            "If you remember three things:\n\n1. Copilot is an assistant — be specific\n2. Prompt quality matters\n3. Grounding is where the value is"
           ]
         },
         {
           "label": "Q&A",
-          "items": [
-            "Open discussion"
-          ],
+          "items": ["Open discussion"],
           "notes": [
-            "### Script\n\nLet’s open it up.\n\nWhat questions do you have?"
+            "Let’s open it up.\n\nWhat questions do you have?"
           ]
         }
       ]
