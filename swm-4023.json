@@ -1,5 +1,5 @@
 {
-  "title": "M365 Copilot Chat Training V2",
+  "title": "M365 Copilot Chat Training V3",
   "segments": [
     {
       "title": "Welcome & Setup",
@@ -9,7 +9,9 @@
         {
           "label": "Slide",
           "items": ["Welcome Slide"],
-          "notes": []          
+          "notes": [
+            "Bla Bla Bla"
+          ]          
         },
         {
           "label": "Intro",
