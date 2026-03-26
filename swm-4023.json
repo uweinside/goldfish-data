@@ -8,9 +8,9 @@
       "info": [
         {
           "label": "Slide",
-          "items": ["Welcome Slide"],
+          "items": ["Welcome Slide!"],
           "notes": [
-            "Bla Bla Bla"
+            "### Bla Bla Bla"
           ]          
         },
         {
