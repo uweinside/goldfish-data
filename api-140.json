@@ -88,7 +88,7 @@
           "label": "Rules",
           "items": [
             "Validate generated specs against linting tools",
-            "Never publish specs without team review"
+            "Never publish specs without team review" 
           ]
         }
       ]
