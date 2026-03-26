@@ -60,6 +60,24 @@ Include both layers in any block that involves verbal delivery. Omit `notes` for
 
 ---
 
+## Meta Blocks vs Transcript Blocks
+
+Info blocks fall into two categories based on whether they carry `notes`:
+
+### Transcript blocks (`notes` present)
+These contain a `notes` array with a full markdown script. The client app's **transcript mode** surfaces only these blocks — they form the navigable, readable flow of the session. A trainer can jump from one transcript block to the next and deliver the entire session from notes alone.
+
+Examples: `Opening Narration`, `Narration`, `Concept Explanation`, `Demo Steps`, `Agenda Walkthrough`, `License Comparison`
+
+### Meta blocks (`notes` absent)
+These contain only `items` — structural or visual cues that only make sense at the planning/overview level. The transcript mode skips them entirely. They exist to help authors and producers understand the session structure at a glance.
+
+Examples: `Slide Content`, `Module Outline`, `Reaction Prompts`, `Chat Prompts`, `Key Points`
+
+**Authoring rule:** If a block involves the trainer speaking at length, it must be a transcript block with `notes`. If it is a checklist, a slide reference, or an interaction prompt, it is a meta block with `items` only.
+
+---
+
 ## Reaction Prompts
 
 Use the `Reaction Prompts` label for blocks that prompt the audience to interact via Teams React buttons, chat, or polls. These are short imperative sentences, e.g.:
