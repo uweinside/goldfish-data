@@ -106,6 +106,103 @@
           ]
         }
       ]
+    },
+    {
+      "title": "What Is M365 Copilot Chat",
+      "duration": 60,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Opening Narration",
+          "items": [
+            "M365 Copilot Chat is our AI assistant — but it is still an assistant; you must instruct it precisely",
+            "Quality of output depends directly on the specificity of your instructions",
+            "Key concept for this module: grounding — adding real-world information to LLM conversations",
+            "Two types of grounding: web-based and work-based"
+          ],
+          "notes": [
+            "### What Is M365 Copilot Chat\n\nSo let's get into Module 1. What is M365 Copilot Chat?\n\nFirst of all — it is our **AI assistant**. And the word *assistant* matters. It is still an assistant. You need to instruct Copilot to do exactly what you want. The more specifically you ask, the better the result you will get. That is one of the key things we are going to practise today.\n\nThe second major concept I want to introduce right now is **grounding**. We are going to ground our Copilot conversations using two types of data: **web** data and **work** data. Grounding means we are adding extra, up-to-date information to the large language model that powers Copilot. I will explain exactly what that means in just a moment."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Large Language Models & Grounding Explained",
+      "duration": 117,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Concept Explanation",
+          "items": [
+            "A large language model (LLM) is the AI engine behind Copilot and most other AI tools",
+            "LLMs are trained on a massive dataset: public internet, articles, books, social media",
+            "Training produces a model that understands and generates natural human language",
+            "Models used in M365 Copilot Chat today: GPT-5 and GPT-5.2",
+            "Training data has a cutoff date — the model does not know about recent events by default",
+            "Grounding solves this: web grounding fetches live internet data; work grounding fetches M365 data"
+          ],
+          "notes": [
+            "### What Is a Large Language Model?\n\nBehind the scenes, when you use Copilot — or almost any AI tool today — you are interacting with a **large language model**, or LLM.\n\nAn LLM is trained on a huge dataset: basically a snapshot of the public internet — articles, books, social media conversations, all of it. The training process teaches the model to understand and generate natural human language. That is what these models are exceptionally good at.\n\nThe models powering M365 Copilot Chat right now are **GPT-5 and GPT-5.2** — the well-known GPT family, running in the background.\n\n### The Knowledge Cutoff Problem\n\nHere is the catch: that training dataset has a **cutoff point in time**. The model was trained on data up to a certain date — and nothing after that. So if you ask Copilot about today's news, it simply does not know.\n\nThat is where **grounding** comes in. Grounding means we give Copilot access to additional, current information beyond its training data:\n\n- **Web grounding** — Copilot fetches live information from the internet to answer your question.\n- **Work grounding** — Copilot fetches information from your organisation's data inside Microsoft 365.\n\nI will show you exactly what both of those look like in practice."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "License Tiers & Interface Walkthrough",
+      "duration": 310,
+      "type": "demo",
+      "info": [
+        {
+          "label": "Narration",
+          "items": [
+            "M365 Copilot Chat is included at no additional cost with an existing Microsoft 365 subscription",
+            "If you already use Word, Excel, Teams, or Outlook — you have access to M365 Copilot Chat today",
+            "An optional add-on — the M365 Copilot license — unlocks work grounding and advanced features"
+          ],
+          "notes": [
+            "### License Inclusion\n\nBefore I show you the interface, here is a very important point: **M365 Copilot Chat is available at no extra cost** if you already have a Microsoft 365 subscription. Word, Excel, Teams, Outlook — if you are using any of those, you have a valid M365 license and you can access Copilot Chat today.\n\nOn top of that, there is an optional **M365 Copilot add-on license** which unlocks more advanced capabilities. I will show you the difference in a moment."
+          ]
+        },
+        {
+          "label": "Demo Steps",
+          "items": [
+            "URL to remember: m365copilot.com — this is the primary entry point",
+            "Sign in with your active M365 account",
+            "Show the Copilot Chat interface",
+            "Show the model selector (top-right): Auto, Quick Response, Think Deeper, GPT-5.2",
+            "Auto mode selects the right model for each prompt — no manual selection needed",
+            "Show the Copilot button inside Word, Excel, PowerPoint — same experience as the web interface"
+          ],
+          "notes": [
+            "### Navigating to the Interface\n\nThe most important thing you take away from today — the URL is **m365copilot.com**. That is your entry point. Sign in with your Microsoft 365 account and you land in the M365 Copilot Chat interface.\n\nAt the top-right of the screen you will see a **model selector**. By default it is set to Auto. You can switch between:\n\n- **Quick Response** — faster, lighter output\n- **Think Deeper** — more thorough, slower response\n- **GPT-5.2** — explicitly selects the latest model with both modes available\n\nIn Auto mode, Copilot picks the right model for your prompt automatically. You do not need to touch this unless you have a specific preference.\n\n### Copilot Is Everywhere in M365\n\nYou will also find the **Copilot button** inside Word, Excel, and PowerPoint — and inside your Edge browser. The experience there is identical to the chat interface at m365copilot.com. Same prompts, same results. It is all the same engine."
+          ]
+        },
+        {
+          "label": "Concept Explanation",
+          "items": [
+            "copilot.microsoft.com is the individual/personal Copilot interface — not the focus of today",
+            "Individual interface has limitations: image generation, podcast creation, capped usage",
+            "Not connected to your M365 work data",
+            "Today's focus is exclusively on m365copilot.com"
+          ],
+          "notes": [
+            "### What About copilot.microsoft.com?\n\nSome of you may have used **copilot.microsoft.com** before. That is a different product — the individual, consumer-facing Copilot. It lets you generate images, create podcasts, and interact with Copilot — but it has usage limits and it is **not connected to your work data**.\n\nThat interface is not what we are covering today. Today is entirely focused on **m365copilot.com** — the enterprise, work-connected experience."
+          ]
+        },
+        {
+          "label": "License Comparison",
+          "items": [
+            "M365 license (included): Copilot Chat with web grounding only",
+            "M365 Copilot add-on: web grounding + work grounding (emails, documents, Teams chats, SharePoint)",
+            "Work grounding boundary = your Microsoft 365 environment",
+            "Web-only Copilot Chat is already very powerful — do not underestimate it",
+            "Add-on also enables Agents and advanced management capabilities"
+          ],
+          "notes": [
+            "### Web vs Work — The Key Difference\n\nHere is the clearest way I can explain the difference between the two license tiers:\n\n**With your standard M365 license**, you get Copilot Chat with **web grounding**. Copilot can search the internet and bring back up-to-date information. That is already a lot — do not underestimate it.\n\n**With the M365 Copilot add-on**, you get everything above **plus work grounding**. That means Copilot can reach into your Microsoft 365 environment — your emails, documents, Teams conversations, SharePoint sites — and use that content to answer your questions. You also unlock **Agents** and other advanced features.\n\nIn short: web data is included with M365. Work data requires the Copilot add-on."
+          ]
+        }
+      ]
     }
   ]
 }
