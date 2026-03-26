@@ -1,25 +1,25 @@
 {
-  "title": "Microsoft 365 Copilot Chat – Teleprompter Flow",
+  "title": "Microsoft 365 Copilot – Full Teleprompter Delivery",
   "segments": [
     {
-      "title": "Welcome & Setup",
-      "duration": 300,
+      "title": "Welcome & Framing",
+      "duration": 600,
       "type": "lecture",
       "info": [
         {
           "label": "Slide",
-          "items": ["Welcome Slide"]
+          "items": ["Welcome"]
         },
         {
           "label": "Intro",
-          "items": ["Welcome participants"],
+          "items": ["Opening"],
           "notes": [
-            "Welcome everyone — great to have you here.\n\nToday we’ll spend about 90 minutes on Microsoft 365 Copilot Chat — and more importantly, how to actually use it effectively in your daily work."
+            "Welcome everyone — great to have you here.\n\nToday we’ll spend about 90 minutes on Microsoft 365 Copilot Chat.\n\nThe focus is not just what it is — but how to actually use it effectively in your daily work."
           ]
         },
         {
           "label": "Narration",
-          "items": ["Explain session format"],
+          "items": ["Set expectations"],
           "notes": [
             "Quick setup:\n\n- Feel free to turn on your camera if you like\n- Please stay muted during the session\n- Ask questions anytime in chat\n- We’ll have time for Q&A at the end"
           ]
@@ -33,9 +33,10 @@
         }
       ]
     },
+
     {
-      "title": "What is Copilot",
-      "duration": 1200,
+      "title": "Copilot Fundamentals & Mental Model",
+      "duration": 1500,
       "type": "lecture",
       "info": [
         {
@@ -44,23 +45,23 @@
         },
         {
           "label": "Segue",
-          "items": ["Transition into topic"],
+          "items": ["Start fundamentals"],
           "notes": [
-            "Let’s start with the basics — what Copilot actually is."
+            "Now that we know who is in the room, let’s build the mental model.\n\nBefore we touch anything practical, you need to understand what Copilot is, where it lives, and how you interact with it."
           ]
         },
         {
           "label": "Narration 1",
-          "items": ["Explain Copilot concept"],
+          "items": ["Definition"],
           "notes": [
-            "Copilot is an AI assistant.\n\nBut — and this is important — it’s still just an assistant.\n\nIt doesn’t magically know what you want.\n\nYou need to tell it clearly what you want."
+            "Copilot is an AI assistant.\n\nIt is based on large language models trained on a large amount of data.\n\nBut — and this is important — it is still just an assistant.\n\nIt does not know what you want unless you tell it clearly.\n\nYou always need to guide it."
           ]
         },
         {
           "label": "Narration 2",
-          "items": ["Introduce key principle"],
+          "items": ["Key principle"],
           "notes": [
-            "And that leads to one key principle:\n\nBetter prompt → better result."
+            "And this leads to one key principle:\n\nBetter prompt equals better result.\n\nIf your prompt is vague, your result will be vague.\n\nIf your prompt is structured and clear, your result improves significantly."
           ]
         },
         {
@@ -69,23 +70,31 @@
         },
         {
           "label": "Narration 3",
-          "items": ["Explain grounding"],
+          "items": ["Grounding explanation"],
           "notes": [
-            "Copilot is trained on large language models.\n\nThat data is static.\n\nSo how do we get current or company-specific data?\n\nThat’s where grounding comes in.\n\nGrounding means adding context to the model.\n\nTwo types:\n- Web grounding → internet\n- Work grounding → your company data"
+            "The model itself is trained on static data.\n\nSo how do we get current or company-specific information?\n\nThat’s where grounding comes in.\n\nGrounding means providing context.\n\nThere are two types:\n\n- Web grounding — information from the internet\n- Work grounding — your Microsoft 365 data\n\nAnd this second one is what makes Copilot truly valuable in organizations."
+          ]
+        },
+        {
+          "label": "Narration 4",
+          "items": ["Licensing"],
+          "notes": [
+            "There is a key distinction.\n\nCopilot Chat is available.\n\nBut the licensed version gives you access to your work data.\n\nThat is the major difference in value."
           ]
         },
         {
           "label": "Demo",
           "items": ["Open Copilot Chat"],
           "notes": [
-            "Let me show you where all of this happens.\n\nGo to m365copilot.com.\n\nIf you remember one thing today — it’s this URL.\n\nThis is your entry point into Copilot Chat."
+            "Open your browser and go to m365copilot.com.\n\nIf you remember one thing today — it’s this URL.\n\nThis is your entry point into Copilot Chat.\n\nThis is where everything happens."
           ]
         }
       ]
     },
+
     {
-      "title": "Prompting Fundamentals",
-      "duration": 1500,
+      "title": "Prompt Engineering",
+      "duration": 1800,
       "type": "demo",
       "info": [
         {
@@ -96,12 +105,12 @@
           "label": "Segue",
           "items": ["Transition"],
           "notes": [
-            "Now that we understand what Copilot is — let’s talk about how to actually get good results from it."
+            "Now that we understand what Copilot is, let’s talk about how to actually get good results."
           ]
         },
         {
           "label": "Narration 1",
-          "items": ["Why prompting matters"],
+          "items": ["Prompt quality"],
           "notes": [
             "Copilot is powerful — but only as good as your prompt.\n\nIf your input is vague, your output will be vague."
           ]
@@ -112,103 +121,193 @@
         },
         {
           "label": "Narration 2",
-          "items": ["Explain framework"],
+          "items": ["4-part structure"],
           "notes": [
             "Think of prompts in four parts:\n\n1. Goal\n2. Context\n3. Instructions\n4. Output format"
+          ]
+        },
+        {
+          "label": "Narration 3",
+          "items": ["4 S framework"],
+          "notes": [
+            "There is also a simple framework:\n\n- Single\n- Specific\n- Short\n- Surround\n\nSingle — focus on one task\nSpecific — be explicit\nShort — keep it concise\nSurround — provide context"
           ]
         },
         {
           "label": "Demo 1",
           "items": ["Bad prompt"],
           "notes": [
-            "Let’s start with a bad example.\n\nWrite an email.\n\nThis is too vague — Copilot doesn’t know what you want."
+            "Let’s start with a bad example.\n\nWrite an email.\n\nThis is too vague."
           ]
         },
         {
           "label": "Demo 2",
-          "items": ["Improve prompt"],
+          "items": ["Improved prompt"],
           "notes": [
-            "Now let’s improve it step by step.\n\nWrite a professional email to a customer declining a request, polite tone, 5 sentences.\n\nMuch better — now Copilot has direction."
-          ]
-        },
-        {
-          "label": "Interaction",
-          "items": ["Ask audience"],
-          "notes": [
-            "What do you think is missing in the first prompt?\n\nLet’s build a better one together."
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Working Smarter",
-      "duration": 1500,
-      "type": "lecture",
-      "info": [
-        {
-          "label": "Slide",
-          "items": ["Copilot in Apps"]
-        },
-        {
-          "label": "Segue",
-          "items": ["Transition"],
-          "notes": [
-            "Now let’s move from basics to real-world usage."
-          ]
-        },
-        {
-          "label": "Narration 1",
-          "items": ["Copilot ecosystem"],
-          "notes": [
-            "Copilot is not just one tool.\n\nYou’ll find it in Word, Excel, PowerPoint, Teams, Outlook.\n\nSame AI — different context."
-          ]
-        },
-        {
-          "label": "Narration 2",
-          "items": ["Sharing"],
-          "notes": [
-            "You can share Copilot conversations.\n\nThink of them as reusable knowledge."
-          ]
-        },
-        {
-          "label": "Demo 1",
-          "items": ["Show sharing"],
-          "notes": [
-            "Let me show you how sharing works.\n\nYou can send this conversation to a colleague — and they can continue from there."
-          ]
-        },
-        {
-          "label": "Narration 3",
-          "items": ["Pages"],
-          "notes": [
-            "Copilot Pages turn chats into structured documents.\n\nThis is where things become reusable."
+            "Now let’s improve it.\n\nWrite a professional email to a customer declining a request, polite tone, 5 sentences.\n\nNow Copilot has direction."
           ]
         },
         {
           "label": "Narration 4",
-          "items": ["Agents"],
+          "items": ["Advanced prompting"],
           "notes": [
-            "And then we have agents.\n\nInstead of prompting every time — you define behavior once."
+            "You can also use advanced techniques.\n\nRole prompting — act as a security expert.\n\nFew-shot prompting — give examples.\n\nChain prompting — iterate step by step."
+          ]
+        },
+        {
+          "label": "Interaction",
+          "items": ["Audience"],
+          "notes": [
+            "Which part of prompting do you think you are currently missing most?"
           ]
         }
       ]
     },
+
     {
-      "title": "Break",
-      "duration": 300,
-      "type": "break",
+      "title": "Core Workflows",
+      "duration": 2400,
+      "type": "demo",
       "info": [
         {
-          "label": "Break",
-          "items": ["Pause"],
+          "label": "Segue",
+          "items": ["Transition"],
           "notes": [
-            "Let’s take a short 5-minute break.\n\nWhen we come back, we’ll wrap up and take your questions."
+            "Now let’s put all of this into practice.\n\nWe will go through real workflows."
+          ]
+        },
+        {
+          "label": "Narration",
+          "items": ["Context"],
+          "notes": [
+            "We are using the Mergington project.\n\nThis represents a realistic development scenario."
+          ]
+        },
+        {
+          "label": "Demo 1",
+          "items": ["Ask Mode"],
+          "notes": [
+            "@workspace Please briefly explain the structure of this project.\nWhat should I do to run it?\n\nThis is how you onboard into a new project."
+          ]
+        },
+        {
+          "label": "Demo 2",
+          "items": ["Inline suggestions"],
+          "notes": [
+            "Start typing and observe Copilot suggestions.\n\nAccept them with Tab.\n\nThis is the fastest interaction model."
+          ]
+        },
+        {
+          "label": "Demo 3",
+          "items": ["Inline Chat"],
+          "notes": [
+            "Select code.\n\nPress Ctrl+I.\n\nAsk Copilot to modify it.\n\nThis is scoped editing."
+          ]
+        },
+        {
+          "label": "Demo 4",
+          "items": ["Agent Mode"],
+          "notes": [
+            "Switch to Agent Mode.\n\nDescribe a goal.\n\nCopilot will plan and execute changes."
+          ]
+        },
+        {
+          "label": "Narration",
+          "items": ["Key insight"],
+          "notes": [
+            "Notice the pattern.\n\nYou move from suggestions → chat → agents.\n\nFrom passive to active."
           ]
         }
       ]
     },
+
     {
-      "title": "Wrap-Up & Q&A",
+      "title": "Architecture & Data Flow",
+      "duration": 1200,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Slide",
+          "items": ["Architecture"]
+        },
+        {
+          "label": "Narration",
+          "items": ["Pipeline"],
+          "notes": [
+            "Let’s look at how Copilot works internally.\n\n1. Secure transmission\n2. Context gathering\n3. Filtering\n4. LLM generation\n5. Post-processing\n6. Delivery\n\nThere are multiple safety layers."
+          ]
+        },
+        {
+          "label": "Narration",
+          "items": ["Key takeaway"],
+          "notes": [
+            "Important:\n\nThis is defense in depth.\n\nBut it is not perfect.\n\nHuman validation is always required."
+          ]
+        }
+      ]
+    },
+
+    {
+      "title": "Privacy & Safeguards",
+      "duration": 1200,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Slide",
+          "items": ["Privacy"]
+        },
+        {
+          "label": "Narration",
+          "items": ["Content exclusions"],
+          "notes": [
+            "Organizations can exclude files.\n\nThese files are never sent to the model.\n\nNo suggestions, no context."
+          ]
+        },
+        {
+          "label": "Narration",
+          "items": ["Public code filter"],
+          "notes": [
+            "There is also a public code filter.\n\nIt prevents suggestions matching public code.\n\nThis is required for IP indemnity."
+          ]
+        },
+        {
+          "label": "Narration",
+          "items": ["Key point"],
+          "notes": [
+            "This is not about trust.\n\nThis is about defense in depth."
+          ]
+        }
+      ]
+    },
+
+    {
+      "title": "Measurement & Adoption",
+      "duration": 900,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Slide",
+          "items": ["Measurement"]
+        },
+        {
+          "label": "Narration",
+          "items": ["Framework"],
+          "notes": [
+            "Organizations measure Copilot in four stages:\n\nEvaluation\nAdoption\nOptimization\nSustained usage"
+          ]
+        },
+        {
+          "label": "Narration",
+          "items": ["Metrics"],
+          "notes": [
+            "Key metrics:\n\nDaily Active Users\nAcceptance Rate\nDeveloper satisfaction"
+          ]
+        }
+      ]
+    },
+
+    {
+      "title": "Wrap-Up",
       "duration": 900,
       "type": "lecture",
       "info": [
@@ -218,16 +317,16 @@
         },
         {
           "label": "Narration",
-          "items": ["Summarize"],
+          "items": ["Summary"],
           "notes": [
-            "If you remember three things:\n\n1. Copilot is an assistant — be specific\n2. Prompt quality matters\n3. Grounding is where the value is"
+            "Copilot accelerates workflows.\n\nBut validation is essential.\n\nPrompting is critical.\n\nAnd safeguards must be configured."
           ]
         },
         {
           "label": "Q&A",
           "items": ["Open discussion"],
           "notes": [
-            "Let’s open it up.\n\nWhat questions do you have?"
+            "What questions do you have?"
           ]
         }
       ]
