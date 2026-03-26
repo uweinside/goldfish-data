@@ -1,5 +1,111 @@
 {
   "title": "M365 Copilot Chat Training",
   "segments": [
+    {
+      "title": "Welcome & Logistics",
+      "duration": 62,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Open warmly — acknowledge attendees across time zones",
+            "Set time expectations: one hour to one hour and a half",
+            "Walk through the live captions and language translation options visible on the slide",
+            "Encourage participants to set their preferred language before the session goes further"
+          ],
+          "notes": [
+            "### Opening Script\n\nHello, hello — good day, good afternoon, good morning, good evening, wherever you are. Welcome to this training: **Transforming Ideas into Action with Copilot Chat**.\n\nReally happy you are here. I know your calendar is busy, so I appreciate you setting aside the next hour to an hour and a half with me.\n\nQuick note on logistics: we are in a standard Teams meeting, so transcriptions are on. You can also enable **live captions** and change the language from the meeting controls. The steps are on the current slide — follow along and set your preferred language now if you need it."
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Session length: approximately one hour to one hour and a half",
+            "Teams meeting with transcriptions enabled",
+            "Live captions available — participants can change caption language to their preference",
+            "Translation option available via meeting settings for non-English speakers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Meeting Norms & Introductions",
+      "duration": 179,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Establish camera-on culture — explain why it helps the trainer",
+            "Set mute norm: stay muted during training, use chat for questions",
+            "Introduce co-presenter Horan as the dedicated question-answerer in chat",
+            "Explain the end-of-session live Q&A slot",
+            "Define the React button convention (thumbs up = yes, surprise = no)",
+            "Introduce yourself and share contact details"
+          ],
+          "notes": [
+            "### Norms Script\n\nA couple of things to agree on before we dive in.\n\nFirst — **cameras on if you can**. I am not going to force it, but seeing a few faces nodding or smiling genuinely helps my brain. Thank you in advance.\n\nSecond — please **stay on mute** during the presentation. If you have a question, drop it in the **chat**. My colleague **Horan** is here specifically to answer every single question that comes in. There are no stupid questions — if you have been struggling with something in Copilot for a while, now is the time to ask.\n\nWe will have a dedicated **live Q&A** at the end where you can unmute and ask me directly.\n\n### React Convention\n\nLet's agree on one more thing — the **React button** in Teams. When I ask a yes/no question:\n- **👍 Thumbs up** = Yes\n- **😲 Surprise icon** = No\n\nThis is just for today's session. Ready to try it?",
+            "### Trainer Introduction\n\nMy name is **Karel De Winter**. I am based in Belgium and I will be presenting the content today.\n\nFor my colleague Horan — Horan will handle all chat questions throughout the session.\n\nIf you want to stay in touch after this training, visit **aka.ms/whoiskarel** — that will take you straight to my LinkedIn. You are also welcome to reach out via email; the address is on the slide."
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Camera on encouraged — helps trainer engagement",
+            "Stay muted during training; post questions in chat",
+            "Horan handles all chat Q&A in real time",
+            "Live Q&A at the end of the session",
+            "React button convention: 👍 = Yes, 😲 = No — for this session only",
+            "Trainer: Karel De Winter, based in Belgium",
+            "Contact: aka.ms/whoiskarel (LinkedIn)"
+          ]
+        },
+        {
+          "label": "Reaction Prompts",
+          "items": [
+            "Are you ready to use the React buttons? Give me a thumbs up!"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agenda Overview",
+      "duration": 144,
+      "type": "lecture",
+      "info": [
+        {
+          "label": "Trainer Focus",
+          "items": [
+            "Walk through the three modules at a high level",
+            "Address the common confusion around which Copilot interface to use",
+            "Clarify what is covered by a standard M365 license versus a paid Copilot add-on license",
+            "Point participants to the course material link in the Microsoft Learn platform",
+            "Get a thumbs-up reaction to confirm readiness before entering Module 1"
+          ],
+          "notes": [
+            "### Agenda Script\n\nSo what are we going to cover today? Three modules.\n\n**Module 1 — M365 Copilot Chat**\nWe will clear up the confusion around which interface to use. What do you get with a standard Microsoft 365 license (Word, Excel, PowerPoint)? What changes when you add a paid Copilot license? I will explain the differences clearly.\n\n**Module 2 — Writing Effective Prompts**\nThis is where we look at four key ingredients for prompts that actually work. The better the prompt, the better the output from Copilot.\n\n**Module 3 — Working Smarter with M365 Copilot Chat**\nHere we go into sharing conversations with colleagues, using **Copilot Pages**, and building your own **agents**.\n\nThe official course material is linked in the chat right now — it lives on **Microsoft Learn** and stays accessible after today, so you can revisit everything we cover.\n\n### Ready check\n\nIf you are ready to start Module 1, give me a **thumbs up**.",
+            "### Module 1 Lead-in\n\nLet's get into it. **M365 Copilot Chat** — that is the focus of the first module."
+          ]
+        },
+        {
+          "label": "Talking Points",
+          "items": [
+            "Module 1: M365 Copilot Chat — interfaces, license tiers, what is included",
+            "Module 2: Writing Effective Prompts — four key elements for better results",
+            "Module 3: Working Smarter — sharing conversations, Copilot Pages, building agents",
+            "Session length: approximately one hour to one hour and a half",
+            "Course material available on Microsoft Learn — link posted in chat",
+            "Material remains accessible after the session ends"
+          ]
+        },
+        {
+          "label": "Reaction Prompts",
+          "items": [
+            "Ready for Module 1? Give me a thumbs up!"
+          ]
+        }
+      ]
+    }
   ]
 }
