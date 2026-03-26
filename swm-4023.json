@@ -1,5 +1,5 @@
 {
-  "title": "M365 Copilot Chat Training V5",
+  "title": "M365 Copilot Chat Training V6",
   "segments": [
     {
       "title": "Welcome & API-First Mindset",
@@ -7,51 +7,10 @@
       "type": "lecture",
       "info": [
         {
-          "label": "Trainer Focus",
-          "items": [
-            "Establish API-first design as the organizing principle",
-            "Align on REST vs GraphQL baseline in the room"
-          ],
+          "label": "Slide",
+          "items": ["Welcome Slide"],
           "notes": [
             "## Test Note Gamma\n\nVerify that **nested bullet lists** and **horizontal rules** render with correct indentation.\n\n### Nested List Structure\n\n- Top-level item A\n  - Sub-item A1\n    - Deep item A1a\n    - Deep item A1b\n  - Sub-item A2\n- Top-level item B\n  - Sub-item B1\n- Top-level item C (no children)\n\n---\n\n### Mixed Emphasis\n\nThis paragraph uses ***bold italic***, plain text, `inline code`, and ~~strikethrough~~ all on the same line to stress-test inline parsing.\n\n---\n\n### Long Paragraph for Vertical Scroll Testing\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.\n\nCurabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis molestie dictum semper, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.\n\n---\n\n*End of note gamma.*"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Ground Rules & Interaction",
-      "duration": 360,
-      "type": "interaction",
-      "info": [
-        {
-          "label": "Narration",
-          "notes": [
-            "You're very welcome to do that if you are speaking a different language and you want me as a translator, but then in text, of course.\n\nAgain, really happy that you are here. We have a lot of people in this call.\n\nThat's very nice, but we need to agree on a couple of things."
-          ]
-        },
-        {
-          "label": "Narration",
-          "notes": [
-            "First of all, you can unmute yourself. You can put on your camera, and that's something that I really prefer.\n\nJust to see a couple of faces nodding or smiling to me — that's better for my brain if I'm going to see that.\n\nThank you for doing that. I really appreciate it."
-          ]
-        },
-        {
-          "label": "Narration",
-          "notes": [
-            "On the other hand, I want you to stay on mute during this training.\n\nI have a colleague that is going to answer all of your questions.\n\nIf you have any question around the topics that we are going to discuss today, anything that comes to mind, please ask your question in the chat."
-          ]
-        },
-        {
-          "label": "Narration",
-          "notes": [
-            "We will have some time at the end of this training to do a quick Q&A.\n\nBut during the session, Horan will provide you each and every answer in the chat.\n\nThere are no stupid questions today.\n\nIf you want to know something that you are struggling with — just ask.\n\nDon't hesitate. Now is the time."
-          ]
-        },
-        {
-          "label": "Interaction",
-          "items": ["Explain reactions"],
-          "notes": [
-            "Let’s also agree on the use of our React button.\n\nInside of Teams, you will see that you have the React button.\n\nIf the answer is yes — thumbs up.\n\nIf the answer is no — use the surprised icon.\n\nIf we agree on that, we have good guardrails for this training."
           ]
         }
       ]
