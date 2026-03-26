@@ -1,5 +1,5 @@
 {
-  "title": "M365 Copilot Chat Training V6",
+  "title": "M365 Copilot Chat Training V7",
   "segments": [
     {
       "title": "Welcome & API-First Mindset",
@@ -10,7 +10,7 @@
           "label": "Slide",
           "items": ["Welcome Slide"],
           "notes": [
-            "## Test Note Gamma\n\nVerify that **nested bullet lists** and **horizontal rules** render with correct indentation.\n\n### Nested List Structure\n\n- Top-level item A\n  - Sub-item A1\n    - Deep item A1a\n    - Deep item A1b\n  - Sub-item A2\n- Top-level item B\n  - Sub-item B1\n- Top-level item C (no children)\n\n---\n\n### Mixed Emphasis\n\nThis paragraph uses ***bold italic***, plain text, `inline code`, and ~~strikethrough~~ all on the same line to stress-test inline parsing.\n\n---\n\n### Long Paragraph for Vertical Scroll Testing\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.\n\nCurabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis molestie dictum semper, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.\n\n---\n\n*End of note gamma.*"
+            "Hello, hello, good day, good afternoon, good morning, good evening, wherever you are.\n\nHello, hello. Welcome at this training about transforming ideas into action with Copilot Chat.\n\nI'm really happy that you are here. I'm really happy that you want to take some time away from your busy calendar and stay with me for one hour, one hour and a half.\n\nThat's what we need to dive into this Copilot Chat session.\n\nI see a lot of people here. Thank you very much for joining. Thank you very much for taking the time."
           ]
         }
       ]
