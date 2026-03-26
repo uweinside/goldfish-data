@@ -7,7 +7,7 @@
       "type": "lecture",
       "info": [
         {
-          "label": "Trainer Focus",
+          "label": "Opening Narration",
           "items": [
             "Open warmly — acknowledge attendees across time zones",
             "Set time expectations: one hour to one hour and a half",
@@ -19,7 +19,7 @@
           ]
         },
         {
-          "label": "Talking Points",
+          "label": "Slide Content",
           "items": [
             "Session length: approximately one hour to one hour and a half",
             "Teams meeting with transcriptions enabled",
@@ -35,7 +35,7 @@
       "type": "lecture",
       "info": [
         {
-          "label": "Trainer Focus",
+          "label": "Narration",
           "items": [
             "Establish camera-on culture — explain why it helps the trainer",
             "Set mute norm: stay muted during training, use chat for questions",
@@ -50,7 +50,7 @@
           ]
         },
         {
-          "label": "Talking Points",
+          "label": "Key Points",
           "items": [
             "Camera on encouraged — helps trainer engagement",
             "Stay muted during training; post questions in chat",
@@ -75,7 +75,7 @@
       "type": "lecture",
       "info": [
         {
-          "label": "Trainer Focus",
+          "label": "Agenda Walkthrough",
           "items": [
             "Walk through the three modules at a high level",
             "Address the common confusion around which Copilot interface to use",
@@ -89,7 +89,7 @@
           ]
         },
         {
-          "label": "Talking Points",
+          "label": "Module Outline",
           "items": [
             "Module 1: M365 Copilot Chat — interfaces, license tiers, what is included",
             "Module 2: Writing Effective Prompts — four key elements for better results",
