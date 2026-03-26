@@ -26,6 +26,23 @@ Each training file has a top-level `title` and a `segments` array. Every segment
 ### Duration
 Compute `duration` in **seconds** from the transcript timestamps. For example, `(1:02 - 4:01)` = 179 seconds.
 
+### Segment type
+Choose `type` based on the dominant activity in the segment:
+
+| Type | Use when |
+|---|---|
+| `lecture` | The trainer is speaking — explaining concepts, walking through slides, or introducing a topic |
+| `demo` | The trainer is live in a product interface — clicking, navigating, or showing something on screen |
+| `activity` | Participants are doing something themselves — a hands-on exercise or worksheet |
+| `qa` | An open Q&A exchange — live questions from participants, not pre-scripted content |
+
+### Segment granularity
+Do not create a segment for every timestamp break in the transcript. Merge short passages (roughly under 45 seconds) into an adjacent segment when:
+- They introduce or lead into the same topic as the next passage, or
+- They form one continuous thought that would feel artificially split.
+
+Only create a new segment when there is a clear topic shift, a mode change (e.g. lecture → demo), or a slide transition.
+
 ---
 
 ## Info Block Labels
@@ -38,6 +55,7 @@ Labels must reflect the **actual function** of the block within the flow of the 
 | Walking through a slide's content | `Slide Content`, `Agenda Walkthrough`, `Module Outline` |
 | Live product demonstration | `Demo`, `Demo Steps` |
 | Background or conceptual explanation | `Concept Explanation` |
+| Side-by-side feature or product comparison | `License Comparison` |
 | Interactive element (polls, reactions, chat) | `Reaction Prompts`, `Chat Prompts` |
 | Key takeaways or summary | `Key Points`, `Summary` |
 | Transition to the next segment | `Transition` |
