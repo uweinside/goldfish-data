@@ -1,0 +1,184 @@
+{
+  "title": "Authoring Reference — Training Segment Patterns",
+  "_comment": "This file is a purpose-built reference that demonstrates every authoring principle. It is not a real training session. Use it to understand correct segment structure, label choices, and the meta vs transcript block distinction.",
+  "segments": [
+    {
+      "title": "Welcome & Session Overview",
+      "duration": 90,
+      "type": "lecture",
+      "_comment": "LECTURE type: trainer is speaking, no product on screen. Short intro passage merged into the overview rather than split — both form one continuous opening thought.",
+      "info": [
+        {
+          "label": "Opening Narration",
+          "_comment": "TRANSCRIPT BLOCK — has notes. Surfaces in transcript mode. Trainer can deliver from items alone (confident) or read notes verbatim (first-time/nervous).",
+          "items": [
+            "Welcome everyone and thank you for joining",
+            "Introduce yourself and the session topic",
+            "Set time expectations for the session",
+            "Acknowledge that this is designed for all experience levels"
+          ],
+          "notes": [
+            "### Welcome\n\nHello everyone, and welcome. Really glad you are here today.\n\nMy name is [Trainer Name] and over the next [X] hours we are going to cover [Topic]. This session is designed for all levels — whether you have never touched this before or you are already using it and want to go deeper, there is something here for you."
+          ]
+        },
+        {
+          "label": "Module Outline",
+          "_comment": "META BLOCK — no notes. Items only. Describes slide content. Skipped by transcript mode — only visible at the planning/overview level.",
+          "items": [
+            "Module 1: Core concepts and background",
+            "Module 2: Live product walkthrough",
+            "Module 3: Hands-on practice",
+            "Q&A at the end"
+          ]
+        },
+        {
+          "label": "Reaction Prompts",
+          "_comment": "META BLOCK — no notes. Prompts audience to use Teams React buttons. Convention for this session: 👍 = Yes, 😲 = No.",
+          "items": [
+            "Have you used this product before? Thumbs up for yes, surprise for no!"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Concept: How It Works",
+      "duration": 130,
+      "type": "lecture",
+      "_comment": "LECTURE type. Two transcript blocks back to back: a brief Narration to set up the topic, then a deeper Concept Explanation. Followed by a meta Key Points block for the slide summary.",
+      "info": [
+        {
+          "label": "Narration",
+          "_comment": "TRANSCRIPT BLOCK — short setup narration. Sets context before the deeper explanation.",
+          "items": [
+            "Before we look at the product, let's build the mental model",
+            "Understanding how this works under the hood makes everything else easier",
+            "Two key ideas: [Concept A] and [Concept B]"
+          ],
+          "notes": [
+            "### Setting the Stage\n\nBefore I show you the interface, I want to spend a few minutes on the underlying concepts. Trust me — once you understand how this works, everything you see in the demo will make immediate sense."
+          ]
+        },
+        {
+          "label": "Concept Explanation",
+          "_comment": "TRANSCRIPT BLOCK — the main conceptual explanation. Longer notes, multiple ### headings for sub-topics. This is the core of what transcript mode navigates through.",
+          "items": [
+            "[Concept A]: what it is and why it matters",
+            "The limitation that [Concept A] creates on its own",
+            "[Concept B]: how it solves that limitation",
+            "Real-world analogy to make it concrete"
+          ],
+          "notes": [
+            "### What Is [Concept A]?\n\n[Concept A] is the engine behind the product. Think of it as a very sophisticated pattern-matching system trained on a huge amount of [relevant data]. It learns to recognise and generate [output type] that sounds natural and accurate.\n\nHere is the catch though: it was trained on data up to a certain point in time. Ask it something from last week and it simply does not know.\n\n### Solving the Gap with [Concept B]\n\nThat is exactly what [Concept B] is for. Instead of relying solely on the trained model, [Concept B] lets the product fetch fresh information from [source] and incorporate it into the response in real time.\n\nA good analogy: the trained model is like a very well-read expert. [Concept B] is like handing that expert today's newspaper just before they answer your question."
+          ]
+        },
+        {
+          "label": "Key Points",
+          "_comment": "META BLOCK — slide summary bullets. No notes. Skipped by transcript mode.",
+          "items": [
+            "[Concept A] = trained on historical data, strong at natural language",
+            "[Concept B] = supplements the model with live or contextual data",
+            "Together: accurate, up-to-date, context-aware responses"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Live Interface Walkthrough",
+      "duration": 210,
+      "type": "demo",
+      "_comment": "DEMO type: trainer is live in a product interface, clicking and navigating on screen. Three transcript blocks: Narration (sets up the demo), Demo Steps (the click-through), License Comparison (explains tier differences).",
+      "info": [
+        {
+          "label": "Narration",
+          "_comment": "TRANSCRIPT BLOCK — brief spoken lead-in before going live in the product.",
+          "items": [
+            "Let's go live in the product now",
+            "URL / entry point to navigate to",
+            "Sign in required — needs an active account"
+          ],
+          "notes": [
+            "### Into the Product\n\nAlright, let's stop talking about it and actually go in. I am going to navigate to [URL] now — make a note of that, it is the most important thing to remember from today.\n\nYou will need to sign in with your [account type] account. If you are following along, do that now."
+          ]
+        },
+        {
+          "label": "Demo Steps",
+          "_comment": "TRANSCRIPT BLOCK — narrates the live click-through. items = what to click, notes = what to say while clicking.",
+          "items": [
+            "Show the main interface — point out the key areas",
+            "Open the [feature area] and explain each option",
+            "Show the [setting] toggle — explain what it controls",
+            "Run a sample interaction and explain the output"
+          ],
+          "notes": [
+            "### Orienting to the Interface\n\nThis is the main screen. Across the top you have [navigation area]. On the left is [panel]. The centre is where [main action] happens.\n\n### Trying It Live\n\nI am going to type [sample input] here and show you what comes back. Watch the [specific element] — that tells you [what it means].\n\n*[Run the interaction]*\n\nSee that? The product returned [description of output]. Notice it also pulled in [additional context] — that is [Concept B] in action, exactly what we just talked about."
+          ]
+        },
+        {
+          "label": "License Comparison",
+          "_comment": "TRANSCRIPT BLOCK — explains feature differences between tiers. Notes walk through the comparison conversationally. Items give the scannable summary.",
+          "items": [
+            "Tier 1 (included): [Feature set A] — web/public data only",
+            "Tier 2 (add-on): everything in Tier 1 + [Feature set B] — access to private/work data",
+            "Key unlock in Tier 2: [specific capability that requires the upgrade]"
+          ],
+          "notes": [
+            "### Which Tier Do You Have?\n\nBefore you run off and try everything, let me be clear about what you have access to depending on your license.\n\n**Tier 1 — included with [base product]:** You get [Feature set A]. The product can reach [public/web data source] to answer your questions. That is already very powerful.\n\n**Tier 2 — the [add-on name]:** On top of that, you get [Feature set B], which means the product can now access [private/work data]. This also unlocks [specific capability].\n\nIf you are not sure which tier you have, [how to check]. The rest of today's demo works with Tier 1, so everyone can follow along."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hands-On Exercise",
+      "duration": 300,
+      "type": "activity",
+      "_comment": "ACTIVITY type: participants are doing something themselves. Narration sets up the task; Slide Content lists the exercise steps as a meta block (participants can read the slide — no spoken script needed for the step list itself).",
+      "info": [
+        {
+          "label": "Narration",
+          "_comment": "TRANSCRIPT BLOCK — spoken setup for the exercise. Explains what to do and what success looks like.",
+          "items": [
+            "Time for you to try it yourselves — five minutes",
+            "Goal: [what they should achieve by the end]",
+            "Work independently or with a neighbour",
+            "Drop your result in chat when done"
+          ],
+          "notes": [
+            "### Your Turn\n\nAlright, now it is your turn. I am going to give you about five minutes to try this yourself.\n\nThe goal is simple: [specific task description]. The steps are on the slide. When you have a result you are happy with, drop it in the **chat** — I want to see what everyone comes up with.\n\nWork at your own pace. If you get stuck, Horan is watching the chat and will help you out."
+          ]
+        },
+        {
+          "label": "Slide Content",
+          "_comment": "META BLOCK — the exercise steps as displayed on screen. No notes because participants read this themselves; the trainer does not narrate it line by line.",
+          "items": [
+            "Step 1: Navigate to [URL] and sign in",
+            "Step 2: [Specific action]",
+            "Step 3: [Specific action]",
+            "Step 4: Review the output and note what surprised you",
+            "Share your result in the Teams chat"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Live Q&A",
+      "duration": 120,
+      "type": "qa",
+      "_comment": "QA type: open Q&A exchange with live participant questions. One Narration block to open the floor. No pre-scripted content beyond the opener — Q&A is live and unscripted.",
+      "info": [
+        {
+          "label": "Narration",
+          "_comment": "TRANSCRIPT BLOCK — spoken transition into Q&A. Short opener to invite questions.",
+          "items": [
+            "Open the floor — invite live questions now",
+            "Remind participants they can now unmute",
+            "Reference that chat questions are still welcome",
+            "Set a time boundary if needed"
+          ],
+          "notes": [
+            "### Opening Q&A\n\nAlright — that is the content for today. Well done everyone.\n\nWe have a few minutes now for live questions. If you have been holding something back, now is the time. Go ahead and **unmute** yourself and ask away. You can also keep posting in chat — Horan and I are both watching.\n\nWho wants to go first?"
+          ]
+        }
+      ]
+    }
+  ]
+}

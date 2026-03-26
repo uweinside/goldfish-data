@@ -128,5 +128,5 @@ When adding new content from a timestamped transcript:
 
 ## Reference Files
 
-- `gh-300-v2.json` — reference file showing a fully-populated multi-segment training with demos, chat prompts, reaction prompts, and rich notes.
+- `reference.json` — purpose-built reference file demonstrating every authoring principle: all four segment types, all label patterns, transcript blocks vs meta blocks, the two-layer delivery design, and segment merging. Use this to understand correct structure before authoring new content.
 - `swm-4023.json` — active working file for the M365 Copilot Chat Training session.
