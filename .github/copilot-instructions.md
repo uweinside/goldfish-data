@@ -17,7 +17,7 @@ Each training file has a top-level `title` and a `segments` array. Every segment
     {
       "label": "Flow-appropriate label",
       "items": ["..."],     // optional high-level bullet points
-      "notes": ["..."]      // optional markdown trainer script blocks
+      "transcript": ["..."]      // optional markdown trainer script blocks
     }
   ]
 }
@@ -71,10 +71,10 @@ Every segment is authored with two layers so trainers can choose their delivery 
 1. **`items` — bullet points for confident trainers**  
    Short, scannable cues. The trainer reads the room and finds their own voice. These should be enough to deliver the segment without reading a script.
 
-2. **`notes` — markdown script for nervous or first-time trainers**  
-   Full sentences, formatted as markdown with `###` headings per sub-topic. A trainer can read this verbatim if needed, or use it as a safety net. Write `notes` as first-person trainer speech.
+2. **`transcript` — markdown script for nervous or first-time trainers**  
+   Full sentences, formatted as markdown with `###` headings per sub-topic. A trainer can read this verbatim if needed, or use it as a safety net. Write `transcript` as first-person trainer speech.
 
-Include both layers in any block that involves verbal delivery. Omit `notes` for purely structural blocks like `Reaction Prompts`.
+Include both layers in any block that involves verbal delivery. Omit `transcript` for purely structural blocks like `Reaction Prompts`.
 
 ---
 
@@ -82,17 +82,17 @@ Include both layers in any block that involves verbal delivery. Omit `notes` for
 
 Info blocks fall into two categories based on whether they carry `notes`:
 
-### Transcript blocks (`notes` present)
-These contain a `notes` array with a full markdown script. The client app's **transcript mode** surfaces only these blocks — they form the navigable, readable flow of the session. A trainer can jump from one transcript block to the next and deliver the entire session from notes alone.
+### Transcript blocks (`transcript` present)
+These contain a `transcript` array with a full markdown script. The client app's **transcript mode** surfaces only these blocks — they form the navigable, readable flow of the session. A trainer can jump from one transcript block to the next and deliver the entire session from transcript alone.
 
 Examples: `Opening Narration`, `Narration`, `Concept Explanation`, `Demo Steps`, `Agenda Walkthrough`, `License Comparison`
 
-### Meta blocks (`notes` absent)
+### Meta blocks (`transcript` absent)
 These contain only `items` — structural or visual cues that only make sense at the planning/overview level. The transcript mode skips them entirely. They exist to help authors and producers understand the session structure at a glance.
 
 Examples: `Slide Content`, `Module Outline`, `Reaction Prompts`, `Chat Prompts`, `Key Points`
 
-**Authoring rule:** If a block involves the trainer speaking at length, it must be a transcript block with `notes`. If it is a checklist, a slide reference, or an interaction prompt, it is a meta block with `items` only.
+**Authoring rule:** If a block involves the trainer speaking at length, it must be a transcript block with `transcript`. If it is a checklist, a slide reference, or an interaction prompt, it is a meta block with `items` only.
 
 ---
 
@@ -121,7 +121,7 @@ When adding new content from a timestamped transcript:
 2. **Create one segment per break.** Give it a descriptive `title` and compute `duration` in seconds.
 3. **Split each segment into labelled `info` blocks** — one block per distinct function (narration, slide walk-through, demo, reaction check, etc.).
 4. **Write `items`** first as high-level bullets capturing what the trainer says.
-5. **Write `notes`** as a flowing markdown script in first-person trainer voice, using the transcript as the source of truth for phrasing and intent.
+5. **Write `transcript`** as a flowing markdown script in first-person trainer voice, using the transcript as the source of truth for phrasing and intent.
 6. **Do not invent content** not present in the transcript. Paraphrase and structure; do not fabricate talking points.
 
 ---

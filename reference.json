@@ -17,7 +17,7 @@
             "Set time expectations for the session",
             "Acknowledge that this is designed for all experience levels"
           ],
-          "notes": [
+          "transcript": [
             "### Welcome\n\nHello everyone, and welcome. Really glad you are here today.\n\nMy name is [Trainer Name] and over the next [X] hours we are going to cover [Topic]. This session is designed for all levels — whether you have never touched this before or you are already using it and want to go deeper, there is something here for you."
           ]
         },
@@ -54,7 +54,7 @@
             "Understanding how this works under the hood makes everything else easier",
             "Two key ideas: [Concept A] and [Concept B]"
           ],
-          "notes": [
+          "transcript": [
             "### Setting the Stage\n\nBefore I show you the interface, I want to spend a few minutes on the underlying concepts. Trust me — once you understand how this works, everything you see in the demo will make immediate sense."
           ]
         },
@@ -67,7 +67,7 @@
             "[Concept B]: how it solves that limitation",
             "Real-world analogy to make it concrete"
           ],
-          "notes": [
+          "transcript": [
             "### What Is [Concept A]?\n\n[Concept A] is the engine behind the product. Think of it as a very sophisticated pattern-matching system trained on a huge amount of [relevant data]. It learns to recognise and generate [output type] that sounds natural and accurate.\n\nHere is the catch though: it was trained on data up to a certain point in time. Ask it something from last week and it simply does not know.\n\n### Solving the Gap with [Concept B]\n\nThat is exactly what [Concept B] is for. Instead of relying solely on the trained model, [Concept B] lets the product fetch fresh information from [source] and incorporate it into the response in real time.\n\nA good analogy: the trained model is like a very well-read expert. [Concept B] is like handing that expert today's newspaper just before they answer your question."
           ]
         },
@@ -96,7 +96,7 @@
             "URL / entry point to navigate to",
             "Sign in required — needs an active account"
           ],
-          "notes": [
+          "transcript": [
             "### Into the Product\n\nAlright, let's stop talking about it and actually go in. I am going to navigate to [URL] now — make a note of that, it is the most important thing to remember from today.\n\nYou will need to sign in with your [account type] account. If you are following along, do that now."
           ]
         },
@@ -109,7 +109,7 @@
             "Show the [setting] toggle — explain what it controls",
             "Run a sample interaction and explain the output"
           ],
-          "notes": [
+          "transcript": [
             "### Orienting to the Interface\n\nThis is the main screen. Across the top you have [navigation area]. On the left is [panel]. The centre is where [main action] happens.\n\n### Trying It Live\n\nI am going to type [sample input] here and show you what comes back. Watch the [specific element] — that tells you [what it means].\n\n*[Run the interaction]*\n\nSee that? The product returned [description of output]. Notice it also pulled in [additional context] — that is [Concept B] in action, exactly what we just talked about."
           ]
         },
@@ -121,7 +121,7 @@
             "Tier 2 (add-on): everything in Tier 1 + [Feature set B] — access to private/work data",
             "Key unlock in Tier 2: [specific capability that requires the upgrade]"
           ],
-          "notes": [
+          "transcript": [
             "### Which Tier Do You Have?\n\nBefore you run off and try everything, let me be clear about what you have access to depending on your license.\n\n**Tier 1 — included with [base product]:** You get [Feature set A]. The product can reach [public/web data source] to answer your questions. That is already very powerful.\n\n**Tier 2 — the [add-on name]:** On top of that, you get [Feature set B], which means the product can now access [private/work data]. This also unlocks [specific capability].\n\nIf you are not sure which tier you have, [how to check]. The rest of today's demo works with Tier 1, so everyone can follow along."
           ]
         }
@@ -142,7 +142,7 @@
             "Work independently or with a neighbour",
             "Drop your result in chat when done"
           ],
-          "notes": [
+          "transcript": [
             "### Your Turn\n\nAlright, now it is your turn. I am going to give you about five minutes to try this yourself.\n\nThe goal is simple: [specific task description]. The steps are on the slide. When you have a result you are happy with, drop it in the **chat** — I want to see what everyone comes up with.\n\nWork at your own pace. If you get stuck, Horan is watching the chat and will help you out."
           ]
         },
@@ -174,7 +174,7 @@
             "Reference that chat questions are still welcome",
             "Set a time boundary if needed"
           ],
-          "notes": [
+          "transcript": [
             "### Opening Q&A\n\nAlright — that is the content for today. Well done everyone.\n\nWe have a few minutes now for live questions. If you have been holding something back, now is the time. Go ahead and **unmute** yourself and ask away. You can also keep posting in chat — Horan and I are both watching.\n\nWho wants to go first?"
           ]
         }
