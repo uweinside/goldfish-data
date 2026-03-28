@@ -1,206 +1,126 @@
 {
   "title": "M365 Copilot Chat Training",
-  "segments": [
+  "chapters": [
     {
       "title": "Welcome & Logistics",
-      "duration": 62,
-      "type": "lecture",
-      "info": [
+      "sections": [
         {
-          "label": "Opening Narration",
-          "items": [
-            "Open warmly — acknowledge attendees across time zones",
-            "Set time expectations: one hour to one hour and a half",
-            "Walk through the live captions and language translation options visible on the slide",
-            "Encourage participants to set their preferred language before the session goes further"
-          ],
-          "transcript": [
-            "### Opening Script\n\nHello, hello — good day, good afternoon, good morning, good evening, wherever you are. Welcome to this training: **Transforming Ideas into Action with Copilot Chat**.\n\nReally happy you are here. I know your calendar is busy, so I appreciate you setting aside the next hour to an hour and a half with me.\n\nQuick note on logistics: we are in a standard Teams meeting, so transcriptions are on. You can also enable **live captions** and change the language from the meeting controls. The steps are on the current slide — follow along and set your preferred language now if you need it."
-          ]
+          "title": "Opening Narration",
+          "type": "Narration",
+          "durationSeconds": 45,
+          "instructions": "## Opening Narration\n- Open warmly and acknowledge attendees across time zones\n- Set time expectations: one hour to one hour and a half\n- Walk through live captions and language translation options on the slide\n- Encourage participants to set their preferred language before proceeding",
+          "transcript": "### Opening Script\n\nHello, hello - good day, good afternoon, good morning, good evening, wherever you are. Welcome to this training: **Transforming Ideas into Action with Copilot Chat**.\n\nReally happy you are here. I know your calendar is busy, so I appreciate you setting aside the next hour to an hour and a half with me.\n\nQuick note on logistics: we are in a standard Teams meeting, so transcriptions are on. You can also enable **live captions** and change the language from the meeting controls. The steps are on the current slide - follow along and set your preferred language now if you need it."
         },
         {
-          "label": "Slide Content",
-          "items": [
-            "Session length: approximately one hour to one hour and a half",
-            "Teams meeting with transcriptions enabled",
-            "Live captions available — participants can change caption language to their preference",
-            "Translation option available via meeting settings for non-English speakers"
-          ]
+          "title": "Slide Content",
+          "type": "Rule",
+          "durationSeconds": 17,
+          "instructions": "## Slide Content\n- Session length: approximately one hour to one hour and a half\n- Teams meeting with transcriptions enabled\n- Live captions available; participants can change caption language to their preference\n- Translation option available via meeting settings for non-English speakers"
         }
       ]
     },
     {
       "title": "Meeting Norms & Introductions",
-      "duration": 179,
-      "type": "lecture",
-      "info": [
+      "sections": [
         {
-          "label": "Narration",
-          "items": [
-            "Establish camera-on culture — explain why it helps the trainer",
-            "Set mute norm: stay muted during training, use chat for questions",
-            "Introduce co-presenter Horan as the dedicated question-answerer in chat",
-            "Explain the end-of-session live Q&A slot",
-            "Define the React button convention (thumbs up = yes, surprise = no)",
-            "Introduce yourself and share contact details"
-          ],
-          "transcript": [
-            "### Norms Script\n\nA couple of things to agree on before we dive in.\n\nFirst — **cameras on if you can**. I am not going to force it, but seeing a few faces nodding or smiling genuinely helps my brain. Thank you in advance.\n\nSecond — please **stay on mute** during the presentation. If you have a question, drop it in the **chat**. My colleague **Horan** is here specifically to answer every single question that comes in. There are no stupid questions — if you have been struggling with something in Copilot for a while, now is the time to ask.\n\nWe will have a dedicated **live Q&A** at the end where you can unmute and ask me directly.\n\n### React Convention\n\nLet's agree on one more thing — the **React button** in Teams. When I ask a yes/no question:\n- **👍 Thumbs up** = Yes\n- **😲 Surprise icon** = No\n\nThis is just for today's session. Ready to try it?",
-            "### Trainer Introduction\n\nMy name is **Karel De Winter**. I am based in Belgium and I will be presenting the content today.\n\nFor my colleague Horan — Horan will handle all chat questions throughout the session.\n\nIf you want to stay in touch after this training, visit **aka.ms/whoiskarel** — that will take you straight to my LinkedIn. You are also welcome to reach out via email; the address is on the slide."
-          ]
+          "title": "Narration",
+          "type": "Narration",
+          "durationSeconds": 130,
+          "instructions": "## Narration\n- Establish camera-on culture and explain why it helps the trainer\n- Set mute norm: stay muted during training, use chat for questions\n- Introduce co-presenter Horan as the dedicated chat responder\n- Explain the end-of-session live Q&A slot\n- Define the React button convention (thumbs up = yes, surprise = no)\n- Introduce yourself and share contact details",
+          "transcript": "### Norms Script\n\nA couple of things to agree on before we dive in.\n\nFirst - **cameras on if you can**. I am not going to force it, but seeing a few faces nodding or smiling genuinely helps my brain. Thank you in advance.\n\nSecond - please **stay on mute** during the presentation. If you have a question, drop it in the **chat**. My colleague **Horan** is here specifically to answer every single question that comes in. There are no stupid questions - if you have been struggling with something in Copilot for a while, now is the time to ask.\n\nWe will have a dedicated **live Q&A** at the end where you can unmute and ask me directly.\n\n### React Convention\n\nLet's agree on one more thing - the **React button** in Teams. When I ask a yes/no question:\n- **👍 Thumbs up** = Yes\n- **😲 Surprise icon** = No\n\nThis is just for today's session. Ready to try it?\n\n### Trainer Introduction\n\nMy name is **Karel De Winter**. I am based in Belgium and I will be presenting the content today.\n\nFor my colleague Horan - Horan will handle all chat questions throughout the session.\n\nIf you want to stay in touch after this training, visit **aka.ms/whoiskarel** - that will take you straight to my LinkedIn. You are also welcome to reach out via email; the address is on the slide."
         },
         {
-          "label": "Key Points",
-          "items": [
-            "Camera on encouraged — helps trainer engagement",
-            "Stay muted during training; post questions in chat",
-            "Horan handles all chat Q&A in real time",
-            "Live Q&A at the end of the session",
-            "React button convention: 👍 = Yes, 😲 = No — for this session only",
-            "Trainer: Karel De Winter, based in Belgium",
-            "Contact: aka.ms/whoiskarel (LinkedIn)"
-          ]
+          "title": "Key Points",
+          "type": "Rule",
+          "durationSeconds": 29,
+          "instructions": "## Key Points\n- Camera on encouraged; helps trainer engagement\n- Stay muted during training and post questions in chat\n- Horan handles all chat Q&A in real time\n- Live Q&A at the end of the session\n- React button convention: 👍 = Yes, 😲 = No\n- Trainer: Karel De Winter, based in Belgium\n- Contact: aka.ms/whoiskarel (LinkedIn)"
         },
         {
-          "label": "Reaction Prompts",
-          "items": [
-            "Are you ready to use the React buttons? Give me a thumbs up!"
-          ]
+          "title": "Reaction Prompts",
+          "type": "Prompt",
+          "durationSeconds": 20,
+          "instructions": "## Reaction Prompts\n- Are you ready to use the React buttons? Give me a thumbs up!"
         }
       ]
     },
     {
       "title": "Agenda Overview",
-      "duration": 144,
-      "type": "lecture",
-      "info": [
+      "sections": [
         {
-          "label": "Agenda Walkthrough",
-          "items": [
-            "Walk through the three modules at a high level",
-            "Address the common confusion around which Copilot interface to use",
-            "Clarify what is covered by a standard M365 license versus a paid Copilot add-on license",
-            "Point participants to the course material link in the Microsoft Learn platform",
-            "Get a thumbs-up reaction to confirm readiness before entering Module 1"
-          ],
-          "transcript": [
-            "### Agenda Script\n\nSo what are we going to cover today? Three modules.\n\n**Module 1 — M365 Copilot Chat**\nWe will clear up the confusion around which interface to use. What do you get with a standard Microsoft 365 license (Word, Excel, PowerPoint)? What changes when you add a paid Copilot license? I will explain the differences clearly.\n\n**Module 2 — Writing Effective Prompts**\nThis is where we look at four key ingredients for prompts that actually work. The better the prompt, the better the output from Copilot.\n\n**Module 3 — Working Smarter with M365 Copilot Chat**\nHere we go into sharing conversations with colleagues, using **Copilot Pages**, and building your own **agents**.\n\nThe official course material is linked in the chat right now — it lives on **Microsoft Learn** and stays accessible after today, so you can revisit everything we cover.\n\n### Ready check\n\nIf you are ready to start Module 1, give me a **thumbs up**.",
-            "### Module 1 Lead-in\n\nLet's get into it. **M365 Copilot Chat** — that is the focus of the first module."
-          ]
+          "title": "Agenda Walkthrough",
+          "type": "Narration",
+          "durationSeconds": 100,
+          "instructions": "## Agenda Walkthrough\n- Walk through the three modules at a high level\n- Address confusion around which Copilot interface to use\n- Clarify standard M365 license versus paid Copilot add-on coverage\n- Point participants to the Microsoft Learn course material link\n- Confirm readiness before entering Module 1",
+          "transcript": "### Agenda Script\n\nSo what are we going to cover today? Three modules.\n\n**Module 1 - M365 Copilot Chat**\nWe will clear up the confusion around which interface to use. What do you get with a standard Microsoft 365 license (Word, Excel, PowerPoint)? What changes when you add a paid Copilot license? I will explain the differences clearly.\n\n**Module 2 - Writing Effective Prompts**\nThis is where we look at four key ingredients for prompts that actually work. The better the prompt, the better the output from Copilot.\n\n**Module 3 - Working Smarter with M365 Copilot Chat**\nHere we go into sharing conversations with colleagues, using **Copilot Pages**, and building your own **agents**.\n\nThe official course material is linked in the chat right now - it lives on **Microsoft Learn** and stays accessible after today, so you can revisit everything we cover.\n\n### Ready check\n\nIf you are ready to start Module 1, give me a **thumbs up**.\n\n### Module 1 Lead-in\n\nLet's get into it. **M365 Copilot Chat** - that is the focus of the first module."
         },
         {
-          "label": "Module Outline",
-          "items": [
-            "Module 1: M365 Copilot Chat — interfaces, license tiers, what is included",
-            "Module 2: Writing Effective Prompts — four key elements for better results",
-            "Module 3: Working Smarter — sharing conversations, Copilot Pages, building agents",
-            "Session length: approximately one hour to one hour and a half",
-            "Course material available on Microsoft Learn — link posted in chat",
-            "Material remains accessible after the session ends"
-          ]
+          "title": "Module Outline",
+          "type": "Rule",
+          "durationSeconds": 24,
+          "instructions": "## Module Outline\n- Module 1: M365 Copilot Chat - interfaces, license tiers, what is included\n- Module 2: Writing Effective Prompts - four key elements for better results\n- Module 3: Working Smarter - sharing conversations, Copilot Pages, building agents\n- Session length: approximately one hour to one hour and a half\n- Course material available on Microsoft Learn; link posted in chat\n- Material remains accessible after the session ends"
         },
         {
-          "label": "Reaction Prompts",
-          "items": [
-            "Ready for Module 1? Give me a thumbs up!"
-          ]
+          "title": "Reaction Prompts",
+          "type": "Prompt",
+          "durationSeconds": 20,
+          "instructions": "## Reaction Prompts\n- Ready for Module 1? Give me a thumbs up!"
         }
       ]
     },
     {
       "title": "What Is M365 Copilot Chat",
-      "duration": 60,
-      "type": "lecture",
-      "info": [
+      "sections": [
         {
-          "label": "Opening Narration",
-          "items": [
-            "M365 Copilot Chat is our AI assistant — but it is still an assistant; you must instruct it precisely",
-            "Quality of output depends directly on the specificity of your instructions",
-            "Key concept for this module: grounding — adding real-world information to LLM conversations",
-            "Two types of grounding: web-based and work-based"
-          ],
-          "transcript": [
-            "### What Is M365 Copilot Chat\n\nSo let's get into Module 1. What is M365 Copilot Chat?\n\nFirst of all — it is our **AI assistant**. And the word *assistant* matters. It is still an assistant. You need to instruct Copilot to do exactly what you want. The more specifically you ask, the better the result you will get. That is one of the key things we are going to practise today.\n\nThe second major concept I want to introduce right now is **grounding**. We are going to ground our Copilot conversations using two types of data: **web** data and **work** data. Grounding means we are adding extra, up-to-date information to the large language model that powers Copilot. I will explain exactly what that means in just a moment."
-          ]
+          "title": "Opening Narration",
+          "type": "Narration",
+          "durationSeconds": 60,
+          "instructions": "## Opening Narration\n- M365 Copilot Chat is an AI assistant that still needs clear instruction\n- Output quality depends on prompt specificity\n- Introduce grounding as a key concept for this module\n- Distinguish web grounding and work grounding",
+          "transcript": "### What Is M365 Copilot Chat\n\nSo let's get into Module 1. What is M365 Copilot Chat?\n\nFirst of all - it is our **AI assistant**. And the word *assistant* matters. It is still an assistant. You need to instruct Copilot to do exactly what you want. The more specifically you ask, the better the result you will get. That is one of the key things we are going to practise today.\n\nThe second major concept I want to introduce right now is **grounding**. We are going to ground our Copilot conversations using two types of data: **web** data and **work** data. Grounding means we are adding extra, up-to-date information to the large language model that powers Copilot. I will explain exactly what that means in just a moment."
         }
       ]
     },
     {
       "title": "Large Language Models & Grounding Explained",
-      "duration": 117,
-      "type": "lecture",
-      "info": [
+      "sections": [
         {
-          "label": "Concept Explanation",
-          "items": [
-            "A large language model (LLM) is the AI engine behind Copilot and most other AI tools",
-            "LLMs are trained on a massive dataset: public internet, articles, books, social media",
-            "Training produces a model that understands and generates natural human language",
-            "Models used in M365 Copilot Chat today: GPT-5 and GPT-5.2",
-            "Training data has a cutoff date — the model does not know about recent events by default",
-            "Grounding solves this: web grounding fetches live internet data; work grounding fetches M365 data"
-          ],
-          "transcript": [
-            "### What Is a Large Language Model?\n\nBehind the scenes, when you use Copilot — or almost any AI tool today — you are interacting with a **large language model**, or LLM.\n\nAn LLM is trained on a huge dataset: basically a snapshot of the public internet — articles, books, social media conversations, all of it. The training process teaches the model to understand and generate natural human language. That is what these models are exceptionally good at.\n\nThe models powering M365 Copilot Chat right now are **GPT-5 and GPT-5.2** — the well-known GPT family, running in the background.\n\n### The Knowledge Cutoff Problem\n\nHere is the catch: that training dataset has a **cutoff point in time**. The model was trained on data up to a certain date — and nothing after that. So if you ask Copilot about today's news, it simply does not know.\n\nThat is where **grounding** comes in. Grounding means we give Copilot access to additional, current information beyond its training data:\n\n- **Web grounding** — Copilot fetches live information from the internet to answer your question.\n- **Work grounding** — Copilot fetches information from your organisation's data inside Microsoft 365.\n\nI will show you exactly what both of those look like in practice."
-          ]
+          "title": "Concept Explanation",
+          "type": "Narration",
+          "durationSeconds": 117,
+          "instructions": "## Concept Explanation\n- Explain that an LLM is the AI engine behind Copilot and similar tools\n- Describe broad training data sources: internet, articles, books, social content\n- Explain that training enables natural language understanding and generation\n- Note models in use: GPT-5 and GPT-5.2\n- Clarify that model knowledge has a cutoff date\n- Explain grounding as the solution: web grounding and work grounding",
+          "transcript": "### What Is a Large Language Model?\n\nBehind the scenes, when you use Copilot - or almost any AI tool today - you are interacting with a **large language model**, or LLM.\n\nAn LLM is trained on a huge dataset: basically a snapshot of the public internet - articles, books, social media conversations, all of it. The training process teaches the model to understand and generate natural human language. That is what these models are exceptionally good at.\n\nThe models powering M365 Copilot Chat right now are **GPT-5 and GPT-5.2** - the well-known GPT family, running in the background.\n\n### The Knowledge Cutoff Problem\n\nHere is the catch: that training dataset has a **cutoff point in time**. The model was trained on data up to a certain date - and nothing after that. So if you ask Copilot about today's news, it simply does not know.\n\nThat is where **grounding** comes in. Grounding means we give Copilot access to additional, current information beyond its training data:\n\n- **Web grounding** - Copilot fetches live information from the internet to answer your question.\n- **Work grounding** - Copilot fetches information from your organisation's data inside Microsoft 365.\n\nI will show you exactly what both of those look like in practice."
         }
       ]
     },
     {
       "title": "License Tiers & Interface Walkthrough",
-      "duration": 310,
-      "type": "demo",
-      "info": [
+      "sections": [
         {
-          "label": "Narration",
-          "items": [
-            "M365 Copilot Chat is included at no additional cost with an existing Microsoft 365 subscription",
-            "If you already use Word, Excel, Teams, or Outlook — you have access to M365 Copilot Chat today",
-            "An optional add-on — the M365 Copilot license — unlocks work grounding and advanced features"
-          ],
-          "transcript": [
-            "### License Inclusion\n\nBefore I show you the interface, here is a very important point: **M365 Copilot Chat is available at no extra cost** if you already have a Microsoft 365 subscription. Word, Excel, Teams, Outlook — if you are using any of those, you have a valid M365 license and you can access Copilot Chat today.\n\nOn top of that, there is an optional **M365 Copilot add-on license** which unlocks more advanced capabilities. I will show you the difference in a moment."
-          ]
+          "title": "Narration",
+          "type": "Narration",
+          "durationSeconds": 60,
+          "instructions": "## Narration\n- Explain that M365 Copilot Chat is included with an active Microsoft 365 subscription\n- Reinforce that Word, Excel, Teams, or Outlook users already have access\n- Introduce the optional M365 Copilot add-on as the unlock for advanced capabilities",
+          "transcript": "### License Inclusion\n\nBefore I show you the interface, here is a very important point: **M365 Copilot Chat is available at no extra cost** if you already have a Microsoft 365 subscription. Word, Excel, Teams, Outlook - if you are using any of those, you have a valid M365 license and you can access Copilot Chat today.\n\nOn top of that, there is an optional **M365 Copilot add-on license** which unlocks more advanced capabilities. I will show you the difference in a moment."
         },
         {
-          "label": "Demo Steps",
-          "items": [
-            "URL to remember: m365copilot.com — this is the primary entry point",
-            "Sign in with your active M365 account",
-            "Show the Copilot Chat interface",
-            "Show the model selector (top-right): Auto, Quick Response, Think Deeper, GPT-5.2",
-            "Auto mode selects the right model for each prompt — no manual selection needed",
-            "Show the Copilot button inside Word, Excel, PowerPoint — same experience as the web interface"
-          ],
-          "transcript": [
-            "### Navigating to the Interface\n\nThe most important thing you take away from today — the URL is **m365copilot.com**. That is your entry point. Sign in with your Microsoft 365 account and you land in the M365 Copilot Chat interface.\n\nAt the top-right of the screen you will see a **model selector**. By default it is set to Auto. You can switch between:\n\n- **Quick Response** — faster, lighter output\n- **Think Deeper** — more thorough, slower response\n- **GPT-5.2** — explicitly selects the latest model with both modes available\n\nIn Auto mode, Copilot picks the right model for your prompt automatically. You do not need to touch this unless you have a specific preference.\n\n### Copilot Is Everywhere in M365\n\nYou will also find the **Copilot button** inside Word, Excel, and PowerPoint — and inside your Edge browser. The experience there is identical to the chat interface at m365copilot.com. Same prompts, same results. It is all the same engine."
-          ]
+          "title": "Demo Steps",
+          "type": "Demo",
+          "durationSeconds": 120,
+          "instructions": "## Demo Steps\n- Navigate to m365copilot.com as the primary entry point\n- Sign in with an active M365 account\n- Show the Copilot Chat interface\n- Show the model selector options: Auto, Quick Response, Think Deeper, GPT-5.2\n- Explain that Auto mode selects the model automatically\n- Show Copilot entry points inside Word, Excel, and PowerPoint",
+          "transcript": "### Navigating to the Interface\n\nThe most important thing you take away from today - the URL is **m365copilot.com**. That is your entry point. Sign in with your Microsoft 365 account and you land in the M365 Copilot Chat interface.\n\nAt the top-right of the screen you will see a **model selector**. By default it is set to Auto. You can switch between:\n\n- **Quick Response** - faster, lighter output\n- **Think Deeper** - more thorough, slower response\n- **GPT-5.2** - explicitly selects the latest model with both modes available\n\nIn Auto mode, Copilot picks the right model for your prompt automatically. You do not need to touch this unless you have a specific preference.\n\n### Copilot Is Everywhere in M365\n\nYou will also find the **Copilot button** inside Word, Excel, and PowerPoint - and inside your Edge browser. The experience there is identical to the chat interface at m365copilot.com. Same prompts, same results. It is all the same engine."
         },
         {
-          "label": "Concept Explanation",
-          "items": [
-            "copilot.microsoft.com is the individual/personal Copilot interface — not the focus of today",
-            "Individual interface has limitations: image generation, podcast creation, capped usage",
-            "Not connected to your M365 work data",
-            "Today's focus is exclusively on m365copilot.com"
-          ],
-          "transcript": [
-            "### What About copilot.microsoft.com?\n\nSome of you may have used **copilot.microsoft.com** before. That is a different product — the individual, consumer-facing Copilot. It lets you generate images, create podcasts, and interact with Copilot — but it has usage limits and it is **not connected to your work data**.\n\nThat interface is not what we are covering today. Today is entirely focused on **m365copilot.com** — the enterprise, work-connected experience."
-          ]
+          "title": "Concept Explanation",
+          "type": "Narration",
+          "durationSeconds": 50,
+          "instructions": "## Concept Explanation\n- Clarify that copilot.microsoft.com is the personal/individual interface\n- Note individual interface limits such as capped usage\n- Emphasize it is not connected to M365 work data\n- Reconfirm that the session focuses only on m365copilot.com",
+          "transcript": "### What About copilot.microsoft.com?\n\nSome of you may have used **copilot.microsoft.com** before. That is a different product - the individual, consumer-facing Copilot. It lets you generate images, create podcasts, and interact with Copilot - but it has usage limits and it is **not connected to your work data**.\n\nThat interface is not what we are covering today. Today is entirely focused on **m365copilot.com** - the enterprise, work-connected experience."
         },
         {
-          "label": "License Comparison",
-          "items": [
-            "M365 license (included): Copilot Chat with web grounding only",
-            "M365 Copilot add-on: web grounding + work grounding (emails, documents, Teams chats, SharePoint)",
-            "Work grounding boundary = your Microsoft 365 environment",
-            "Web-only Copilot Chat is already very powerful — do not underestimate it",
-            "Add-on also enables Agents and advanced management capabilities"
-          ],
-          "transcript": [
-            "### Web vs Work — The Key Difference\n\nHere is the clearest way I can explain the difference between the two license tiers:\n\n**With your standard M365 license**, you get Copilot Chat with **web grounding**. Copilot can search the internet and bring back up-to-date information. That is already a lot — do not underestimate it.\n\n**With the M365 Copilot add-on**, you get everything above **plus work grounding**. That means Copilot can reach into your Microsoft 365 environment — your emails, documents, Teams conversations, SharePoint sites — and use that content to answer your questions. You also unlock **Agents** and other advanced features.\n\nIn short: web data is included with M365. Work data requires the Copilot add-on."
-          ]
+          "title": "License Comparison",
+          "type": "Narration",
+          "durationSeconds": 80,
+          "instructions": "## License Comparison\n- Standard M365 license includes Copilot Chat with web grounding\n- M365 Copilot add-on includes web grounding plus work grounding\n- Work grounding scope includes email, documents, Teams chats, and SharePoint\n- Reinforce that web-only Copilot Chat remains powerful\n- Add-on also enables agents and advanced management capabilities",
+          "transcript": "### Web vs Work - The Key Difference\n\nHere is the clearest way I can explain the difference between the two license tiers:\n\n**With your standard M365 license**, you get Copilot Chat with **web grounding**. Copilot can search the internet and bring back up-to-date information. That is already a lot - do not underestimate it.\n\n**With the M365 Copilot add-on**, you get everything above **plus work grounding**. That means Copilot can reach into your Microsoft 365 environment - your emails, documents, Teams conversations, SharePoint sites - and use that content to answer your questions. You also unlock **Agents** and other advanced features.\n\nIn short: web data is included with M365. Work data requires the Copilot add-on."
         }
       ]
     }

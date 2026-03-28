@@ -1,132 +1,125 @@
-# Goldfish Data — Copilot Authoring Instructions
+# Goldfish Data - Copilot Authoring Instructions
 
-This repository contains structured training segment data in JSON format. When adding or editing segments, follow the schema and authoring guidelines below.
+This repository contains structured training course data in JSON format. When adding or editing content, follow the schema and authoring guidelines below.
 
 ---
 
 ## JSON Schema
 
-Each training file has a top-level `title` and a `segments` array. Every segment follows this shape:
+Each training file has a top-level `title` and a `chapters` array. Every chapter contains a `title` and a `sections` array.
+
+Each section follows this shape:
 
 ```json
 {
-  "title": "Short descriptive title for this moment in the session",
-  "duration": 120,          // seconds derived from transcript timestamps
-  "type": "lecture",        // "lecture" | "demo" | "activity" | "qa"
-  "info": [
-    {
-      "label": "Flow-appropriate label",
-      "items": ["..."],     // optional high-level bullet points
-      "transcript": ["..."]      // optional markdown trainer script blocks
-    }
-  ]
+  "title": "Short descriptive title for this section",
+  "type": "Narration",          // "Narration" | "Demo" | "Prompt" | "Rule"
+  "durationSeconds": 120,         // integer seconds
+  "instructions": "## Guidance\n- bullet points",
+  "transcript": "### Optional script" // optional
 }
 ```
 
-### Duration
-Compute `duration` in **seconds** from the transcript timestamps. For example, `(1:02 - 4:01)` = 179 seconds.
+### Required fields
+- Course: `title`, `chapters`
+- Chapter: `title`, `sections`
+- Section: `title`, `type`, `durationSeconds`, `instructions`
 
-### Segment type
-Choose `type` based on the dominant activity in the segment:
+### Optional fields
+- Section: `transcript`
+
+### Duration
+Use `durationSeconds` as an integer.
+
+When converting timestamped source material, compute chapter-level duration first, then distribute section durations so they remain realistic and sum to the chapter's total duration.
+
+---
+
+## Section Types
+
+Use the section type that matches the section's primary purpose:
 
 | Type | Use when |
 |---|---|
-| `lecture` | The trainer is speaking — explaining concepts, walking through slides, or introducing a topic |
-| `demo` | The trainer is live in a product interface — clicking, navigating, or showing something on screen |
-| `activity` | Participants are doing something themselves — a hands-on exercise or worksheet |
-| `qa` | An open Q&A exchange — live questions from participants, not pre-scripted content |
-
-### Segment granularity
-Do not create a segment for every timestamp break in the transcript. Merge short passages (roughly under 45 seconds) into an adjacent segment when:
-- They introduce or lead into the same topic as the next passage, or
-- They form one continuous thought that would feel artificially split.
-
-Only create a new segment when there is a clear topic shift, a mode change (e.g. lecture → demo), or a slide transition.
+| `Narration` | Trainer-led spoken explanation, walkthrough, framing, or conceptual content |
+| `Demo` | Live product interaction: clicking, navigating, configuring, showing outputs |
+| `Prompt` | Audience interaction prompts: reactions, chat prompts, polls, Q&A invitations |
+| `Rule` | Structural or reference guidance: slide bullets, summaries, checklists, constraints |
 
 ---
 
-## Info Block Labels
+## Title And Content Strategy
 
-Labels must reflect the **actual function** of the block within the flow of the session — not generic roles. Choose from these patterns (or invent a new one that fits):
+### Chapter titles
+Use chapter titles for the session flow moments (for example: "Agenda Overview", "Live Interface Walkthrough").
 
-| Block function | Example labels |
-|---|---|
-| Verbal narrative at the start of a segment | `Opening Narration`, `Narration` |
-| Walking through a slide's content | `Slide Content`, `Agenda Walkthrough`, `Module Outline` |
-| Live product demonstration | `Demo`, `Demo Steps` |
-| Background or conceptual explanation | `Concept Explanation` |
-| Side-by-side feature or product comparison | `License Comparison` |
-| Interactive element (polls, reactions, chat) | `Reaction Prompts`, `Chat Prompts` |
-| Key takeaways or summary | `Key Points`, `Summary` |
-| Transition to the next segment | `Transition` |
+### Section titles
+Use concise function-based titles (for example: "Opening Narration", "Demo Steps", "Key Points", "Reaction Prompts").
 
-Never use generic labels like `"Trainer Focus"` or `"Talking Points"` — they do not convey *what the block is for*.
+### Instructions
+`instructions` is required for every section and should be markdown optimized for trainer execution:
+- Start with a short heading (for example: `## Demo Steps`)
+- Use concise bullet points
+- Keep content actionable and scannable
 
----
-
-## The Two-Layer Delivery Design
-
-Every segment is authored with two layers so trainers can choose their delivery style:
-
-1. **`items` — bullet points for confident trainers**  
-   Short, scannable cues. The trainer reads the room and finds their own voice. These should be enough to deliver the segment without reading a script.
-
-2. **`transcript` — markdown script for nervous or first-time trainers**  
-   Full sentences, formatted as markdown with `###` headings per sub-topic. A trainer can read this verbatim if needed, or use it as a safety net. Write `transcript` as first-person trainer speech.
-
-Include both layers in any block that involves verbal delivery. Omit `transcript` for purely structural blocks like `Reaction Prompts`.
+### Transcript
+Use `transcript` when the trainer needs a read-aloud script or safety-net wording.
+- Write as first-person trainer speech
+- Use markdown headings (`###`) for subtopics where helpful
+- Omit `transcript` for purely structural sections
 
 ---
 
-## Meta Blocks vs Transcript Blocks
+## Two-Layer Delivery Design (New Schema)
 
-Info blocks fall into two categories based on whether they carry `notes`:
+Each spoken section can provide two delivery layers:
 
-### Transcript blocks (`transcript` present)
-These contain a `transcript` array with a full markdown script. The client app's **transcript mode** surfaces only these blocks — they form the navigable, readable flow of the session. A trainer can jump from one transcript block to the next and deliver the entire session from transcript alone.
+1. `instructions` - short execution bullets for confident trainers
+2. `transcript` - fuller script for less experienced trainers
 
-Examples: `Opening Narration`, `Narration`, `Concept Explanation`, `Demo Steps`, `Agenda Walkthrough`, `License Comparison`
-
-### Meta blocks (`transcript` absent)
-These contain only `items` — structural or visual cues that only make sense at the planning/overview level. The transcript mode skips them entirely. They exist to help authors and producers understand the session structure at a glance.
-
-Examples: `Slide Content`, `Module Outline`, `Reaction Prompts`, `Chat Prompts`, `Key Points`
-
-**Authoring rule:** If a block involves the trainer speaking at length, it must be a transcript block with `transcript`. If it is a checklist, a slide reference, or an interaction prompt, it is a meta block with `items` only.
+For meta/structural sections (for example slide bullets), keep only `instructions`.
 
 ---
 
-## Reaction Prompts
+## Mapping Guidance For Legacy Data
 
-Use the `Reaction Prompts` label for blocks that prompt the audience to interact via Teams React buttons, chat, or polls. These are short imperative sentences, e.g.:
+When migrating old `segments/info` content to this schema:
 
-```json
-{
-  "label": "Reaction Prompts",
-  "items": [
-    "Ready for Module 1? Give me a thumbs up!"
-  ]
-}
-```
-
-The session convention is: 👍 = Yes, 😲 = No.
+1. Convert each old segment into a chapter.
+2. Convert each old info block into a section.
+3. Map `items` to `instructions` markdown bullets.
+4. Join old transcript arrays into a single markdown string in `transcript`.
+5. Map section type using intent:
+   - Demo-like blocks -> `Demo`
+   - Reaction/chat/Q&A prompt blocks -> `Prompt`
+   - Structural slide/key-point blocks -> `Rule`
+   - Spoken explanation blocks -> `Narration`
 
 ---
 
-## Workflow for Converting Transcript Segments
+## Reaction Prompts Convention
 
-When adding new content from a timestamped transcript:
+Use `Prompt` sections for audience interaction moments (Teams React buttons, chat, polls).
 
-1. **Identify natural breaks** in the transcript — topic shifts, slide transitions, or clear pauses.
-2. **Create one segment per break.** Give it a descriptive `title` and compute `duration` in seconds.
-3. **Split each segment into labelled `info` blocks** — one block per distinct function (narration, slide walk-through, demo, reaction check, etc.).
-4. **Write `items`** first as high-level bullets capturing what the trainer says.
-5. **Write `transcript`** as a flowing markdown script in first-person trainer voice, using the transcript as the source of truth for phrasing and intent.
-6. **Do not invent content** not present in the transcript. Paraphrase and structure; do not fabricate talking points.
+Session convention example:
+- 👍 = Yes
+- 😲 = No
+
+---
+
+## Workflow For Converting Timestamped Transcript Content
+
+1. Identify natural chapter breaks: topic shifts, major transitions, or mode changes.
+2. Create one chapter per break.
+3. Split each chapter into sections by delivery function (narration, demo, rule/prompt).
+4. Write section-level `instructions` first.
+5. Add `transcript` only where spoken scripting is needed.
+6. Assign section `type` and `durationSeconds` values.
+7. Keep wording faithful to source material; paraphrase for clarity, do not invent new claims.
 
 ---
 
 ## Reference Files
 
-- `reference.json` — purpose-built reference file demonstrating every authoring principle: all four segment types, all label patterns, transcript blocks vs meta blocks, the two-layer delivery design, and segment merging. Use this to understand correct structure before authoring new content.
-- `swm-4023.json` — active working file for the M365 Copilot Chat Training session.
+- `reference.json` - purpose-built reference for section type and structure patterns in the new schema.
+- `swm-4023.json` - active working file for the M365 Copilot Chat Training session in the new schema.
